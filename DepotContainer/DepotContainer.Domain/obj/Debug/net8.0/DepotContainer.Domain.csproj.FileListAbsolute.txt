@@ -16,6 +16,7 @@ D:\Dự án Depot\DepotContainer\DepotContainer.Domain\obj\Debug\net8.0\DepotCon
 D:\Dự án Depot\DepotContainer\DepotContainer.Domain\obj\Debug\net8.0\DepotContainer.Domain.AssemblyInfoInputs.cache
 D:\Dự án Depot\DepotContainer\DepotContainer.Domain\obj\Debug\net8.0\DepotContainer.Domain.AssemblyInfo.cs
 D:\Dự án Depot\DepotContainer\DepotContainer.Domain\obj\Debug\net8.0\DepotContainer.Domain.csproj.CoreCompileInputs.cache
+D:\Dự án Depot\DepotContainer\DepotContainer.Domain\obj\Debug\net8.0\DepotContainer.Domain.sourcelink.json
 D:\Dự án Depot\DepotContainer\DepotContainer.Domain\obj\Debug\net8.0\DepotContainer.Domain.dll
 D:\Dự án Depot\DepotContainer\DepotContainer.Domain\obj\Debug\net8.0\refint\DepotContainer.Domain.dll
 D:\Dự án Depot\DepotContainer\DepotContainer.Domain\obj\Debug\net8.0\DepotContainer.Domain.pdb

@@ -30,6 +30,7 @@ D:\Dự án Depot\DepotContainer\DepotContainer.Infrastructure\obj\Debug\net8.0\
 D:\Dự án Depot\DepotContainer\DepotContainer.Infrastructure\obj\Debug\net8.0\DepotContainer.Infrastructure.AssemblyInfoInputs.cache
 D:\Dự án Depot\DepotContainer\DepotContainer.Infrastructure\obj\Debug\net8.0\DepotContainer.Infrastructure.AssemblyInfo.cs
 D:\Dự án Depot\DepotContainer\DepotContainer.Infrastructure\obj\Debug\net8.0\DepotContainer.Infrastructure.csproj.CoreCompileInputs.cache
+D:\Dự án Depot\DepotContainer\DepotContainer.Infrastructure\obj\Debug\net8.0\DepotContainer.Infrastructure.sourcelink.json
 D:\Dự án Depot\DepotContainer\DepotContainer.Infrastructure\obj\Debug\net8.0\DepotCon.B4924306.Up2Date
 D:\Dự án Depot\DepotContainer\DepotContainer.Infrastructure\obj\Debug\net8.0\DepotContainer.Infrastructure.dll
 D:\Dự án Depot\DepotContainer\DepotContainer.Infrastructure\obj\Debug\net8.0\refint\DepotContainer.Infrastructure.dll

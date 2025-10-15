@@ -15,9 +15,9 @@ namespace DepotContainer.Application.Services
             _eirRepository = eirRepository;
         }
 
-        // ✅ Lấy toàn bộ danh sách EIR
+        //Lấy toàn bộ danh sách EIR
         public async Task<IEnumerable<EirDto>> GetAllAsync()
-        {   
+        {
             var eirs = await _eirRepository.GetAllAsync();
 
             return eirs.Select(e => new EirDto
@@ -27,7 +27,7 @@ namespace DepotContainer.Application.Services
                 Type = e.Type,
                 ContainerNumber = e.Container?.ContainerNo ?? string.Empty,
                 CustomerName = e.Customer?.Name ?? string.Empty,
-                StaffName = e.Staff?.StaffName ?? string.Empty, // 🟢 thêm dòng này
+                StaffName = e.Staff?.StaffName ?? string.Empty,
                 PlateNumber = e.PlateNumber,
                 BatNo = e.BatNo,
                 IssueDate = e.IssueDate,
@@ -35,7 +35,7 @@ namespace DepotContainer.Application.Services
             });
         }
 
-        // ✅ Lấy EIR theo ID
+        //Lấy EIR theo ID
         public async Task<EirDto?> GetByIdAsync(int id)
         {
             var e = await _eirRepository.GetByIdAsync(id);
@@ -48,7 +48,7 @@ namespace DepotContainer.Application.Services
                 Type = e.Type,
                 ContainerNumber = e.Container?.ContainerNo ?? string.Empty,
                 CustomerName = e.Customer?.Name ?? string.Empty,
-                StaffName = e.Staff?.StaffName ?? string.Empty, // 🟢 thêm dòng này
+                StaffName = e.Staff?.StaffName ?? string.Empty,
                 PlateNumber = e.PlateNumber,
                 BatNo = e.BatNo,
                 IssueDate = e.IssueDate,
@@ -56,13 +56,16 @@ namespace DepotContainer.Application.Services
             };
         }
 
-        // ✅ Tạo mới EIR
+        //Tạo mới EIR
         public async Task<EirDto> CreateAsync(CreateEirDto dto)
         {
+            //Nếu không nhập mã EIR → tự sinh theo chuẩn EIR251014001
+            string generatedEirNumber = $"EIR{DateTime.Now:yyMMdd}{new Random().Next(1, 999):D3}";
+
             var eir = new EIR
             {
                 EirNumber = string.IsNullOrWhiteSpace(dto.EirNumber)
-                    ? $"EIR-{DateTime.Now:yyyyMMddHHmmss}" // tự sinh nếu trống
+                    ? generatedEirNumber
                     : dto.EirNumber,
                 Type = dto.Type,
                 ContId = dto.ContainerId,
@@ -77,6 +80,7 @@ namespace DepotContainer.Application.Services
             };
 
             await _eirRepository.AddAsync(eir);
+
             return new EirDto
             {
                 EirId = eir.EirId,
@@ -84,7 +88,7 @@ namespace DepotContainer.Application.Services
                 Type = eir.Type,
                 ContainerNumber = eir.Container?.ContainerNo ?? string.Empty,
                 CustomerName = eir.Customer?.Name ?? string.Empty,
-                StaffName = eir.Staff?.StaffName ?? string.Empty, // 🟢 thêm dòng này
+                StaffName = eir.Staff?.StaffName ?? string.Empty,
                 PlateNumber = eir.PlateNumber,
                 BatNo = eir.BatNo,
                 IssueDate = eir.IssueDate,
@@ -92,14 +96,14 @@ namespace DepotContainer.Application.Services
             };
         }
 
-        // ✅ Cập nhật EIR
+        //Cập nhật EIR
         public async Task UpdateAsync(UpdateEirDto dto)
         {
             var eir = await _eirRepository.GetByIdAsync(dto.EirId);
             if (eir == null)
                 throw new Exception("EIR not found.");
 
-            // Cập nhật nếu có giá trị mới
+            // 🔸 Cập nhật nếu có giá trị mới
             if (!string.IsNullOrWhiteSpace(dto.EirNumber)) eir.EirNumber = dto.EirNumber;
             if (dto.Type.HasValue) eir.Type = dto.Type.Value;
             if (dto.ContainerId.HasValue) eir.ContId = dto.ContainerId.Value;
@@ -114,7 +118,7 @@ namespace DepotContainer.Application.Services
             await _eirRepository.UpdateAsync(eir);
         }
 
-        // ✅ Xóa EIR
+        //Xóa EIR
         public async Task DeleteAsync(int id)
         {
             var eir = await _eirRepository.GetByIdAsync(id);

@@ -26,6 +26,7 @@ D:\Dự án Depot\DepotContainer\DepotContainer.Application\obj\Debug\net8.0\Dep
 D:\Dự án Depot\DepotContainer\DepotContainer.Application\obj\Debug\net8.0\DepotContainer.Application.AssemblyInfoInputs.cache
 D:\Dự án Depot\DepotContainer\DepotContainer.Application\obj\Debug\net8.0\DepotContainer.Application.AssemblyInfo.cs
 D:\Dự án Depot\DepotContainer\DepotContainer.Application\obj\Debug\net8.0\DepotContainer.Application.csproj.CoreCompileInputs.cache
+D:\Dự án Depot\DepotContainer\DepotContainer.Application\obj\Debug\net8.0\DepotContainer.Application.sourcelink.json
 D:\Dự án Depot\DepotContainer\DepotContainer.Application\obj\Debug\net8.0\DepotCon.17AD9EAF.Up2Date
 D:\Dự án Depot\DepotContainer\DepotContainer.Application\obj\Debug\net8.0\DepotContainer.Application.dll
 D:\Dự án Depot\DepotContainer\DepotContainer.Application\obj\Debug\net8.0\refint\DepotContainer.Application.dll

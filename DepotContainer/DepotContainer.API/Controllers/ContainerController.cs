@@ -18,7 +18,7 @@ namespace DepotContainer.API.Controllers
         [HttpGet]
         public async Task<IActionResult> GetAll()
         {
-            var containers = await _containerService.GetAllAsync();
+            var containers = await  _containerService.GetAllAsync();
             return Ok(containers);
         }
 

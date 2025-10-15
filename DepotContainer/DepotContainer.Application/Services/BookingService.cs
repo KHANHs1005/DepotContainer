@@ -1,8 +1,7 @@
 ﻿using DepotContainer.Application.DTOs;
-using DepotContainer.Application.Interfaces.Repositories;  // ✅ thêm dòng này
+using DepotContainer.Application.Interfaces.Repositories;
 using DepotContainer.Application.Interfaces.Services;
 using DepotContainer.Domain.Entities;
-
 
 namespace DepotContainer.Application.Services
 {
@@ -50,6 +49,13 @@ namespace DepotContainer.Application.Services
 
         public async Task<BookingDto> CreateAsync(CreateBookingDto dto)
         {
+            if (string.IsNullOrWhiteSpace(dto.BookingNumber))
+                throw new Exception("BookingNumber là bắt buộc");
+
+            var existing = await _bookingRepository.GetAllAsync();
+            if (existing.Any(b => b.BookingNumber == dto.BookingNumber))
+                throw new Exception("BookingNumber đã tồn tại");
+
             var booking = new Booking
             {
                 BookingNumber = dto.BookingNumber,
@@ -78,7 +84,7 @@ namespace DepotContainer.Application.Services
         {
             var booking = await _bookingRepository.GetByIdAsync(dto.BookingId);
             if (booking == null)
-                throw new Exception("Booking not found");
+                throw new Exception("Booking không tồn tại");
 
             booking.ContSize = dto.ContSize;
             booking.ContQuantity = dto.ContQuantity;
@@ -92,7 +98,7 @@ namespace DepotContainer.Application.Services
         {
             var booking = await _bookingRepository.GetByIdAsync(id);
             if (booking == null)
-                throw new Exception("Booking not found");
+                throw new Exception("Booking không tồn tại");
 
             await _bookingRepository.DeleteAsync(booking);
         }
