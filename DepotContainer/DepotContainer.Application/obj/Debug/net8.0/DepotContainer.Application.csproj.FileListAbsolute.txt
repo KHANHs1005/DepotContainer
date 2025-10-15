@@ -1,0 +1,34 @@
+D:\Dự án Thực Tập\DepotContainer\DepotContainer.Application\bin\Debug\net8.0\DepotContainer.Application.deps.json
+D:\Dự án Thực Tập\DepotContainer\DepotContainer.Application\bin\Debug\net8.0\DepotContainer.Application.runtimeconfig.json
+D:\Dự án Thực Tập\DepotContainer\DepotContainer.Application\bin\Debug\net8.0\DepotContainer.Application.dll
+D:\Dự án Thực Tập\DepotContainer\DepotContainer.Application\bin\Debug\net8.0\DepotContainer.Application.pdb
+D:\Dự án Thực Tập\DepotContainer\DepotContainer.Application\bin\Debug\net8.0\DepotContainer.Domain.dll
+D:\Dự án Thực Tập\DepotContainer\DepotContainer.Application\bin\Debug\net8.0\DepotContainer.Domain.pdb
+D:\Dự án Thực Tập\DepotContainer\DepotContainer.Application\obj\Debug\net8.0\DepotContainer.Application.csproj.AssemblyReference.cache
+D:\Dự án Thực Tập\DepotContainer\DepotContainer.Application\obj\Debug\net8.0\DepotContainer.Application.GeneratedMSBuildEditorConfig.editorconfig
+D:\Dự án Thực Tập\DepotContainer\DepotContainer.Application\obj\Debug\net8.0\DepotContainer.Application.AssemblyInfoInputs.cache
+D:\Dự án Thực Tập\DepotContainer\DepotContainer.Application\obj\Debug\net8.0\DepotContainer.Application.AssemblyInfo.cs
+D:\Dự án Thực Tập\DepotContainer\DepotContainer.Application\obj\Debug\net8.0\DepotContainer.Application.csproj.CoreCompileInputs.cache
+D:\Dự án Thực Tập\DepotContainer\DepotContainer.Application\obj\Debug\net8.0\DepotCon.17AD9EAF.Up2Date
+D:\Dự án Thực Tập\DepotContainer\DepotContainer.Application\obj\Debug\net8.0\DepotContainer.Application.dll
+D:\Dự án Thực Tập\DepotContainer\DepotContainer.Application\obj\Debug\net8.0\refint\DepotContainer.Application.dll
+D:\Dự án Thực Tập\DepotContainer\DepotContainer.Application\obj\Debug\net8.0\DepotContainer.Application.pdb
+D:\Dự án Thực Tập\DepotContainer\DepotContainer.Application\obj\Debug\net8.0\DepotContainer.Application.genruntimeconfig.cache
+D:\Dự án Thực Tập\DepotContainer\DepotContainer.Application\obj\Debug\net8.0\ref\DepotContainer.Application.dll
+D:\Dự án Depot\DepotContainer\DepotContainer.Application\bin\Debug\net8.0\DepotContainer.Application.deps.json
+D:\Dự án Depot\DepotContainer\DepotContainer.Application\bin\Debug\net8.0\DepotContainer.Application.runtimeconfig.json
+D:\Dự án Depot\DepotContainer\DepotContainer.Application\bin\Debug\net8.0\DepotContainer.Application.dll
+D:\Dự án Depot\DepotContainer\DepotContainer.Application\bin\Debug\net8.0\DepotContainer.Application.pdb
+D:\Dự án Depot\DepotContainer\DepotContainer.Application\bin\Debug\net8.0\DepotContainer.Domain.dll
+D:\Dự án Depot\DepotContainer\DepotContainer.Application\bin\Debug\net8.0\DepotContainer.Domain.pdb
+D:\Dự án Depot\DepotContainer\DepotContainer.Application\obj\Debug\net8.0\DepotContainer.Application.csproj.AssemblyReference.cache
+D:\Dự án Depot\DepotContainer\DepotContainer.Application\obj\Debug\net8.0\DepotContainer.Application.GeneratedMSBuildEditorConfig.editorconfig
+D:\Dự án Depot\DepotContainer\DepotContainer.Application\obj\Debug\net8.0\DepotContainer.Application.AssemblyInfoInputs.cache
+D:\Dự án Depot\DepotContainer\DepotContainer.Application\obj\Debug\net8.0\DepotContainer.Application.AssemblyInfo.cs
+D:\Dự án Depot\DepotContainer\DepotContainer.Application\obj\Debug\net8.0\DepotContainer.Application.csproj.CoreCompileInputs.cache
+D:\Dự án Depot\DepotContainer\DepotContainer.Application\obj\Debug\net8.0\DepotCon.17AD9EAF.Up2Date
+D:\Dự án Depot\DepotContainer\DepotContainer.Application\obj\Debug\net8.0\DepotContainer.Application.dll
+D:\Dự án Depot\DepotContainer\DepotContainer.Application\obj\Debug\net8.0\refint\DepotContainer.Application.dll
+D:\Dự án Depot\DepotContainer\DepotContainer.Application\obj\Debug\net8.0\DepotContainer.Application.pdb
+D:\Dự án Depot\DepotContainer\DepotContainer.Application\obj\Debug\net8.0\DepotContainer.Application.genruntimeconfig.cache
+D:\Dự án Depot\DepotContainer\DepotContainer.Application\obj\Debug\net8.0\ref\DepotContainer.Application.dll

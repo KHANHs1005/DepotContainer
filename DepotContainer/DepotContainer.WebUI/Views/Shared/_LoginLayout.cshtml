@@ -1,0 +1,25 @@
+﻿<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>@ViewBag.Title - Đăng nhập</title>
+
+    <link rel="stylesheet" href="~/css/login.css" />
+
+    @RenderSection("Styles", required: false)
+</head>
+<body>
+    <div class="login-page">
+        <div class="login-left">
+            @RenderBody()
+        </div>
+        <div class="login-right">
+            <div class="overlay"></div>
+            <img src="~/img/container.jpg" alt="Container background" />
+        </div>
+    </div>
+
+    @RenderSection("Scripts", required: false)
+</body>
+</html>

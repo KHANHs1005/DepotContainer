@@ -1,0 +1,757 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "D:\\D\u1EF1 \u00E1n Depot\\DepotContainer\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{93385BA4-9775-4407-9E78-E16BF9D18F70}|DepotContainer.Infrastructure\\DepotContainer.Infrastructure.csproj|d:\\d\u1EF1 \u00E1n depot\\depotcontainer\\depotcontainer.infrastructure\\data\\depotdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{93385BA4-9775-4407-9E78-E16BF9D18F70}|DepotContainer.Infrastructure\\DepotContainer.Infrastructure.csproj|solutionrelative:depotcontainer.infrastructure\\data\\depotdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{93385BA4-9775-4407-9E78-E16BF9D18F70}|DepotContainer.Infrastructure\\DepotContainer.Infrastructure.csproj|d:\\d\u1EF1 \u00E1n depot\\depotcontainer\\depotcontainer.infrastructure\\repositories\\customerrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{93385BA4-9775-4407-9E78-E16BF9D18F70}|DepotContainer.Infrastructure\\DepotContainer.Infrastructure.csproj|solutionrelative:depotcontainer.infrastructure\\repositories\\customerrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{93385BA4-9775-4407-9E78-E16BF9D18F70}|DepotContainer.Infrastructure\\DepotContainer.Infrastructure.csproj|d:\\d\u1EF1 \u00E1n depot\\depotcontainer\\depotcontainer.infrastructure\\repositories\\bookingrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{93385BA4-9775-4407-9E78-E16BF9D18F70}|DepotContainer.Infrastructure\\DepotContainer.Infrastructure.csproj|solutionrelative:depotcontainer.infrastructure\\repositories\\bookingrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F157640F-D80D-4819-8968-FF986513DD5F}|DepotContainer.Domain\\DepotContainer.Domain.csproj|d:\\d\u1EF1 \u00E1n depot\\depotcontainer\\depotcontainer.domain\\common\\baseentity.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F157640F-D80D-4819-8968-FF986513DD5F}|DepotContainer.Domain\\DepotContainer.Domain.csproj|solutionrelative:depotcontainer.domain\\common\\baseentity.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F157640F-D80D-4819-8968-FF986513DD5F}|DepotContainer.Domain\\DepotContainer.Domain.csproj|d:\\d\u1EF1 \u00E1n depot\\depotcontainer\\depotcontainer.domain\\depotcontainer.domain.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{F157640F-D80D-4819-8968-FF986513DD5F}|DepotContainer.Domain\\DepotContainer.Domain.csproj|solutionrelative:depotcontainer.domain\\depotcontainer.domain.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{93385BA4-9775-4407-9E78-E16BF9D18F70}|DepotContainer.Infrastructure\\DepotContainer.Infrastructure.csproj|d:\\d\u1EF1 \u00E1n depot\\depotcontainer\\depotcontainer.infrastructure\\depotcontainer.infrastructure.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{93385BA4-9775-4407-9E78-E16BF9D18F70}|DepotContainer.Infrastructure\\DepotContainer.Infrastructure.csproj|solutionrelative:depotcontainer.infrastructure\\depotcontainer.infrastructure.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|D:\\D\u1EF1 \u00E1n Th\u1EF1c T\u1EADp\\obj\\DepotContainer.API.EntityFrameworkCore.targets||{FA3CD31E-987B-443A-9B81-186104E8DAC1}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B7F6250C-F603-452D-A314-75683E60B85F}|DepotContainer.WebUI\\DepotContainer.WebUI.csproj|d:\\d\u1EF1 \u00E1n depot\\depotcontainer\\depotcontainer.webui\\views\\shared\\_layout.cshtml.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
+      "RelativeMoniker": "D:0:0:{B7F6250C-F603-452D-A314-75683E60B85F}|DepotContainer.WebUI\\DepotContainer.WebUI.csproj|solutionrelative:depotcontainer.webui\\views\\shared\\_layout.cshtml.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B7F6250C-F603-452D-A314-75683E60B85F}|DepotContainer.WebUI\\DepotContainer.WebUI.csproj|d:\\d\u1EF1 \u00E1n depot\\depotcontainer\\depotcontainer.webui\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{B7F6250C-F603-452D-A314-75683E60B85F}|DepotContainer.WebUI\\DepotContainer.WebUI.csproj|solutionrelative:depotcontainer.webui\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B7F6250C-F603-452D-A314-75683E60B85F}|DepotContainer.WebUI\\DepotContainer.WebUI.csproj|d:\\d\u1EF1 \u00E1n depot\\depotcontainer\\depotcontainer.webui\\views\\_viewimports.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{B7F6250C-F603-452D-A314-75683E60B85F}|DepotContainer.WebUI\\DepotContainer.WebUI.csproj|solutionrelative:depotcontainer.webui\\views\\_viewimports.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B7F6250C-F603-452D-A314-75683E60B85F}|DepotContainer.WebUI\\DepotContainer.WebUI.csproj|d:\\d\u1EF1 \u00E1n depot\\depotcontainer\\depotcontainer.webui\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{B7F6250C-F603-452D-A314-75683E60B85F}|DepotContainer.WebUI\\DepotContainer.WebUI.csproj|solutionrelative:depotcontainer.webui\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8BE03C14-7A67-4534-A33D-8479E129D6A9}|DepotContainer.Application\\DepotContainer.Application.csproj|d:\\d\u1EF1 \u00E1n depot\\depotcontainer\\depotcontainer.application\\dtos\\eirdtos.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8BE03C14-7A67-4534-A33D-8479E129D6A9}|DepotContainer.Application\\DepotContainer.Application.csproj|solutionrelative:depotcontainer.application\\dtos\\eirdtos.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1C191EC4-69CA-410B-B6B9-F86D79633342}|DepotContainer.API\\DepotContainer.API.csproj|d:\\d\u1EF1 \u00E1n depot\\depotcontainer\\depotcontainer.api\\controllers\\staffcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1C191EC4-69CA-410B-B6B9-F86D79633342}|DepotContainer.API\\DepotContainer.API.csproj|solutionrelative:depotcontainer.api\\controllers\\staffcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B7F6250C-F603-452D-A314-75683E60B85F}|DepotContainer.WebUI\\DepotContainer.WebUI.csproj|d:\\d\u1EF1 \u00E1n depot\\depotcontainer\\depotcontainer.webui\\controllers\\logincontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B7F6250C-F603-452D-A314-75683E60B85F}|DepotContainer.WebUI\\DepotContainer.WebUI.csproj|solutionrelative:depotcontainer.webui\\controllers\\logincontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B7F6250C-F603-452D-A314-75683E60B85F}|DepotContainer.WebUI\\DepotContainer.WebUI.csproj|d:\\d\u1EF1 \u00E1n depot\\depotcontainer\\depotcontainer.webui\\models\\loginviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B7F6250C-F603-452D-A314-75683E60B85F}|DepotContainer.WebUI\\DepotContainer.WebUI.csproj|solutionrelative:depotcontainer.webui\\models\\loginviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B7F6250C-F603-452D-A314-75683E60B85F}|DepotContainer.WebUI\\DepotContainer.WebUI.csproj|d:\\d\u1EF1 \u00E1n depot\\depotcontainer\\depotcontainer.webui\\models\\errorviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B7F6250C-F603-452D-A314-75683E60B85F}|DepotContainer.WebUI\\DepotContainer.WebUI.csproj|solutionrelative:depotcontainer.webui\\models\\errorviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B7F6250C-F603-452D-A314-75683E60B85F}|DepotContainer.WebUI\\DepotContainer.WebUI.csproj|d:\\d\u1EF1 \u00E1n depot\\depotcontainer\\depotcontainer.webui\\depotcontainer.webui.csproj||{04B8AB82-A572-4FEF-95CE-5222444B6B64}|",
+      "RelativeMoniker": "D:0:0:{B7F6250C-F603-452D-A314-75683E60B85F}|DepotContainer.WebUI\\DepotContainer.WebUI.csproj|solutionrelative:depotcontainer.webui\\depotcontainer.webui.csproj||{04B8AB82-A572-4FEF-95CE-5222444B6B64}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B7F6250C-F603-452D-A314-75683E60B85F}|DepotContainer.WebUI\\DepotContainer.WebUI.csproj|d:\\d\u1EF1 \u00E1n depot\\depotcontainer\\depotcontainer.webui\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{B7F6250C-F603-452D-A314-75683E60B85F}|DepotContainer.WebUI\\DepotContainer.WebUI.csproj|solutionrelative:depotcontainer.webui\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B7F6250C-F603-452D-A314-75683E60B85F}|DepotContainer.WebUI\\DepotContainer.WebUI.csproj|d:\\d\u1EF1 \u00E1n depot\\depotcontainer\\depotcontainer.webui\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B7F6250C-F603-452D-A314-75683E60B85F}|DepotContainer.WebUI\\DepotContainer.WebUI.csproj|solutionrelative:depotcontainer.webui\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B7F6250C-F603-452D-A314-75683E60B85F}|DepotContainer.WebUI\\DepotContainer.WebUI.csproj|d:\\d\u1EF1 \u00E1n depot\\depotcontainer\\depotcontainer.webui\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B7F6250C-F603-452D-A314-75683E60B85F}|DepotContainer.WebUI\\DepotContainer.WebUI.csproj|solutionrelative:depotcontainer.webui\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B7F6250C-F603-452D-A314-75683E60B85F}|DepotContainer.WebUI\\DepotContainer.WebUI.csproj|d:\\d\u1EF1 \u00E1n depot\\depotcontainer\\depotcontainer.webui\\views\\login\\login.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{B7F6250C-F603-452D-A314-75683E60B85F}|DepotContainer.WebUI\\DepotContainer.WebUI.csproj|solutionrelative:depotcontainer.webui\\views\\login\\login.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B7F6250C-F603-452D-A314-75683E60B85F}|DepotContainer.WebUI\\DepotContainer.WebUI.csproj|d:\\d\u1EF1 \u00E1n depot\\depotcontainer\\depotcontainer.webui\\wwwroot\\css\\login.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
+      "RelativeMoniker": "D:0:0:{B7F6250C-F603-452D-A314-75683E60B85F}|DepotContainer.WebUI\\DepotContainer.WebUI.csproj|solutionrelative:depotcontainer.webui\\wwwroot\\css\\login.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B7F6250C-F603-452D-A314-75683E60B85F}|DepotContainer.WebUI\\DepotContainer.WebUI.csproj|d:\\d\u1EF1 \u00E1n depot\\depotcontainer\\depotcontainer.webui\\wwwroot\\css\\site.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
+      "RelativeMoniker": "D:0:0:{B7F6250C-F603-452D-A314-75683E60B85F}|DepotContainer.WebUI\\DepotContainer.WebUI.csproj|solutionrelative:depotcontainer.webui\\wwwroot\\css\\site.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B7F6250C-F603-452D-A314-75683E60B85F}|DepotContainer.WebUI\\DepotContainer.WebUI.csproj|d:\\d\u1EF1 \u00E1n depot\\depotcontainer\\depotcontainer.webui\\views\\shared\\_loginlayout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{B7F6250C-F603-452D-A314-75683E60B85F}|DepotContainer.WebUI\\DepotContainer.WebUI.csproj|solutionrelative:depotcontainer.webui\\views\\shared\\_loginlayout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B7F6250C-F603-452D-A314-75683E60B85F}|DepotContainer.WebUI\\DepotContainer.WebUI.csproj|d:\\d\u1EF1 \u00E1n depot\\depotcontainer\\depotcontainer.webui\\depotcontainer.webui.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{B7F6250C-F603-452D-A314-75683E60B85F}|DepotContainer.WebUI\\DepotContainer.WebUI.csproj|solutionrelative:depotcontainer.webui\\depotcontainer.webui.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B7F6250C-F603-452D-A314-75683E60B85F}|DepotContainer.WebUI\\DepotContainer.WebUI.csproj|d:\\d\u1EF1 \u00E1n depot\\depotcontainer\\depotcontainer.webui\\views\\shared\\_validationscriptspartial.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{B7F6250C-F603-452D-A314-75683E60B85F}|DepotContainer.WebUI\\DepotContainer.WebUI.csproj|solutionrelative:depotcontainer.webui\\views\\shared\\_validationscriptspartial.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B7F6250C-F603-452D-A314-75683E60B85F}|DepotContainer.WebUI\\DepotContainer.WebUI.csproj|d:\\d\u1EF1 \u00E1n depot\\depotcontainer\\depotcontainer.webui\\views\\shared\\error.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{B7F6250C-F603-452D-A314-75683E60B85F}|DepotContainer.WebUI\\DepotContainer.WebUI.csproj|solutionrelative:depotcontainer.webui\\views\\shared\\error.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B7F6250C-F603-452D-A314-75683E60B85F}|DepotContainer.WebUI\\DepotContainer.WebUI.csproj|d:\\d\u1EF1 \u00E1n depot\\depotcontainer\\depotcontainer.webui\\views\\_viewstart.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{B7F6250C-F603-452D-A314-75683E60B85F}|DepotContainer.WebUI\\DepotContainer.WebUI.csproj|solutionrelative:depotcontainer.webui\\views\\_viewstart.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B7F6250C-F603-452D-A314-75683E60B85F}|DepotContainer.WebUI\\DepotContainer.WebUI.csproj|d:\\d\u1EF1 \u00E1n depot\\depotcontainer\\depotcontainer.webui\\properties\\launchsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{B7F6250C-F603-452D-A314-75683E60B85F}|DepotContainer.WebUI\\DepotContainer.WebUI.csproj|solutionrelative:depotcontainer.webui\\properties\\launchsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B7F6250C-F603-452D-A314-75683E60B85F}|DepotContainer.WebUI\\DepotContainer.WebUI.csproj|d:\\d\u1EF1 \u00E1n depot\\depotcontainer\\depotcontainer.webui\\appsettings.development.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{B7F6250C-F603-452D-A314-75683E60B85F}|DepotContainer.WebUI\\DepotContainer.WebUI.csproj|solutionrelative:depotcontainer.webui\\appsettings.development.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{93385BA4-9775-4407-9E78-E16BF9D18F70}|DepotContainer.Infrastructure\\DepotContainer.Infrastructure.csproj|d:\\d\u1EF1 \u00E1n depot\\depotcontainer\\depotcontainer.infrastructure\\repositories\\eirrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{93385BA4-9775-4407-9E78-E16BF9D18F70}|DepotContainer.Infrastructure\\DepotContainer.Infrastructure.csproj|solutionrelative:depotcontainer.infrastructure\\repositories\\eirrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8BE03C14-7A67-4534-A33D-8479E129D6A9}|DepotContainer.Application\\DepotContainer.Application.csproj|d:\\d\u1EF1 \u00E1n depot\\depotcontainer\\depotcontainer.application\\interfaces\\repositories\\icontainerrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8BE03C14-7A67-4534-A33D-8479E129D6A9}|DepotContainer.Application\\DepotContainer.Application.csproj|solutionrelative:depotcontainer.application\\interfaces\\repositories\\icontainerrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8BE03C14-7A67-4534-A33D-8479E129D6A9}|DepotContainer.Application\\DepotContainer.Application.csproj|d:\\d\u1EF1 \u00E1n depot\\depotcontainer\\depotcontainer.application\\services\\eirservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8BE03C14-7A67-4534-A33D-8479E129D6A9}|DepotContainer.Application\\DepotContainer.Application.csproj|solutionrelative:depotcontainer.application\\services\\eirservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F157640F-D80D-4819-8968-FF986513DD5F}|DepotContainer.Domain\\DepotContainer.Domain.csproj|d:\\d\u1EF1 \u00E1n depot\\depotcontainer\\depotcontainer.domain\\entites\\slot.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F157640F-D80D-4819-8968-FF986513DD5F}|DepotContainer.Domain\\DepotContainer.Domain.csproj|solutionrelative:depotcontainer.domain\\entites\\slot.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F157640F-D80D-4819-8968-FF986513DD5F}|DepotContainer.Domain\\DepotContainer.Domain.csproj|d:\\d\u1EF1 \u00E1n depot\\depotcontainer\\depotcontainer.domain\\enum\\slotstatus.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F157640F-D80D-4819-8968-FF986513DD5F}|DepotContainer.Domain\\DepotContainer.Domain.csproj|solutionrelative:depotcontainer.domain\\enum\\slotstatus.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F157640F-D80D-4819-8968-FF986513DD5F}|DepotContainer.Domain\\DepotContainer.Domain.csproj|d:\\d\u1EF1 \u00E1n depot\\depotcontainer\\depotcontainer.domain\\enum\\stafftype.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F157640F-D80D-4819-8968-FF986513DD5F}|DepotContainer.Domain\\DepotContainer.Domain.csproj|solutionrelative:depotcontainer.domain\\enum\\stafftype.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F157640F-D80D-4819-8968-FF986513DD5F}|DepotContainer.Domain\\DepotContainer.Domain.csproj|d:\\d\u1EF1 \u00E1n depot\\depotcontainer\\depotcontainer.domain\\entites\\staff.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F157640F-D80D-4819-8968-FF986513DD5F}|DepotContainer.Domain\\DepotContainer.Domain.csproj|solutionrelative:depotcontainer.domain\\entites\\staff.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1C191EC4-69CA-410B-B6B9-F86D79633342}|DepotContainer.API\\DepotContainer.API.csproj|d:\\d\u1EF1 \u00E1n depot\\depotcontainer\\depotcontainer.api\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1C191EC4-69CA-410B-B6B9-F86D79633342}|DepotContainer.API\\DepotContainer.API.csproj|solutionrelative:depotcontainer.api\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{93385BA4-9775-4407-9E78-E16BF9D18F70}|DepotContainer.Infrastructure\\DepotContainer.Infrastructure.csproj|d:\\d\u1EF1 \u00E1n depot\\depotcontainer\\depotcontainer.infrastructure\\repositories\\staffrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{93385BA4-9775-4407-9E78-E16BF9D18F70}|DepotContainer.Infrastructure\\DepotContainer.Infrastructure.csproj|solutionrelative:depotcontainer.infrastructure\\repositories\\staffrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8BE03C14-7A67-4534-A33D-8479E129D6A9}|DepotContainer.Application\\DepotContainer.Application.csproj|d:\\d\u1EF1 \u00E1n depot\\depotcontainer\\depotcontainer.application\\interfaces\\services\\ieirservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8BE03C14-7A67-4534-A33D-8479E129D6A9}|DepotContainer.Application\\DepotContainer.Application.csproj|solutionrelative:depotcontainer.application\\interfaces\\services\\ieirservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{93385BA4-9775-4407-9E78-E16BF9D18F70}|DepotContainer.Infrastructure\\DepotContainer.Infrastructure.csproj|d:\\d\u1EF1 \u00E1n depot\\depotcontainer\\depotcontainer.infrastructure\\repositories\\blockrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{93385BA4-9775-4407-9E78-E16BF9D18F70}|DepotContainer.Infrastructure\\DepotContainer.Infrastructure.csproj|solutionrelative:depotcontainer.infrastructure\\repositories\\blockrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E04D4CCD-1D45-4412-96F4-C1F440CF6228}|DepotContainer.UnitTests\\DepotContainer.UnitTests.csproj|d:\\d\u1EF1 \u00E1n depot\\depotcontainer\\depotcontainer.unittests\\depotcontainer.unittests.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{E04D4CCD-1D45-4412-96F4-C1F440CF6228}|DepotContainer.UnitTests\\DepotContainer.UnitTests.csproj|solutionrelative:depotcontainer.unittests\\depotcontainer.unittests.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{93385BA4-9775-4407-9E78-E16BF9D18F70}|DepotContainer.Infrastructure\\DepotContainer.Infrastructure.csproj|d:\\d\u1EF1 \u00E1n depot\\depotcontainer\\depotcontainer.infrastructure\\repositories\\slotrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{93385BA4-9775-4407-9E78-E16BF9D18F70}|DepotContainer.Infrastructure\\DepotContainer.Infrastructure.csproj|solutionrelative:depotcontainer.infrastructure\\repositories\\slotrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{93385BA4-9775-4407-9E78-E16BF9D18F70}|DepotContainer.Infrastructure\\DepotContainer.Infrastructure.csproj|d:\\d\u1EF1 \u00E1n depot\\depotcontainer\\depotcontainer.infrastructure\\repositories\\genericrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{93385BA4-9775-4407-9E78-E16BF9D18F70}|DepotContainer.Infrastructure\\DepotContainer.Infrastructure.csproj|solutionrelative:depotcontainer.infrastructure\\repositories\\genericrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{93385BA4-9775-4407-9E78-E16BF9D18F70}|DepotContainer.Infrastructure\\DepotContainer.Infrastructure.csproj|d:\\d\u1EF1 \u00E1n depot\\depotcontainer\\depotcontainer.infrastructure\\repositories\\containerrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{93385BA4-9775-4407-9E78-E16BF9D18F70}|DepotContainer.Infrastructure\\DepotContainer.Infrastructure.csproj|solutionrelative:depotcontainer.infrastructure\\repositories\\containerrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{93385BA4-9775-4407-9E78-E16BF9D18F70}|DepotContainer.Infrastructure\\DepotContainer.Infrastructure.csproj|d:\\d\u1EF1 \u00E1n depot\\depotcontainer\\depotcontainer.infrastructure\\repositories\\dependencyinjection.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{93385BA4-9775-4407-9E78-E16BF9D18F70}|DepotContainer.Infrastructure\\DepotContainer.Infrastructure.csproj|solutionrelative:depotcontainer.infrastructure\\repositories\\dependencyinjection.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 312,
+          "SelectedChildIndex": 33,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 32,
+              "Title": "EirService.cs",
+              "DocumentMoniker": "D:\\D\u1EF1 \u00E1n Depot\\DepotContainer\\DepotContainer.Application\\Services\\EirService.cs",
+              "RelativeDocumentMoniker": "DepotContainer.Application\\Services\\EirService.cs",
+              "ToolTip": "D:\\D\u1EF1 \u00E1n Depot\\DepotContainer\\DepotContainer.Application\\Services\\EirService.cs",
+              "RelativeToolTip": "DepotContainer.Application\\Services\\EirService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAGUAAAAqAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-09T02:22:02.555Z",
+              "IsPinned": true
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 31,
+              "Title": "IContainerRepository.cs",
+              "DocumentMoniker": "D:\\D\u1EF1 \u00E1n Depot\\DepotContainer\\DepotContainer.Application\\Interfaces\\Repositories\\IContainerRepository.cs",
+              "RelativeDocumentMoniker": "DepotContainer.Application\\Interfaces\\Repositories\\IContainerRepository.cs",
+              "ToolTip": "D:\\D\u1EF1 \u00E1n Depot\\DepotContainer\\DepotContainer.Application\\Interfaces\\Repositories\\IContainerRepository.cs",
+              "RelativeToolTip": "DepotContainer.Application\\Interfaces\\Repositories\\IContainerRepository.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAVAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-12T10:39:56.741Z",
+              "IsPinned": true
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 39,
+              "Title": "IEirService.cs",
+              "DocumentMoniker": "D:\\D\u1EF1 \u00E1n Depot\\DepotContainer\\DepotContainer.Application\\Interfaces\\Services\\IEirService.cs",
+              "RelativeDocumentMoniker": "DepotContainer.Application\\Interfaces\\Services\\IEirService.cs",
+              "ToolTip": "D:\\D\u1EF1 \u00E1n Depot\\DepotContainer\\DepotContainer.Application\\Interfaces\\Services\\IEirService.cs",
+              "RelativeToolTip": "DepotContainer.Application\\Interfaces\\Services\\IEirService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-10T03:45:22.046Z",
+              "IsPinned": true
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "BaseEntity.cs",
+              "DocumentMoniker": "D:\\D\u1EF1 \u00E1n Depot\\DepotContainer\\DepotContainer.Domain\\Common\\BaseEntity.cs",
+              "RelativeDocumentMoniker": "DepotContainer.Domain\\Common\\BaseEntity.cs",
+              "ToolTip": "D:\\D\u1EF1 \u00E1n Depot\\DepotContainer\\DepotContainer.Domain\\Common\\BaseEntity.cs",
+              "RelativeToolTip": "DepotContainer.Domain\\Common\\BaseEntity.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-15T01:25:52.342Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "DepotContainer.Domain.csproj",
+              "DocumentMoniker": "D:\\D\u1EF1 \u00E1n Depot\\DepotContainer\\DepotContainer.Domain\\DepotContainer.Domain.csproj",
+              "RelativeDocumentMoniker": "DepotContainer.Domain\\DepotContainer.Domain.csproj",
+              "ToolTip": "D:\\D\u1EF1 \u00E1n Depot\\DepotContainer\\DepotContainer.Domain\\DepotContainer.Domain.csproj",
+              "RelativeToolTip": "DepotContainer.Domain\\DepotContainer.Domain.csproj",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2025-10-15T01:25:48.536Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "DepotContainer.API.EntityFrameworkCore.targets",
+              "DocumentMoniker": "D:\\D\u1EF1 \u00E1n Th\u1EF1c T\u1EADp\\obj\\DepotContainer.API.EntityFrameworkCore.targets",
+              "RelativeDocumentMoniker": "..\\..\\D\u1EF1 \u00E1n Th\u1EF1c T\u1EADp\\obj\\DepotContainer.API.EntityFrameworkCore.targets",
+              "ToolTip": "D:\\D\u1EF1 \u00E1n Th\u1EF1c T\u1EADp\\obj\\DepotContainer.API.EntityFrameworkCore.targets",
+              "RelativeToolTip": "..\\..\\D\u1EF1 \u00E1n Th\u1EF1c T\u1EADp\\obj\\DepotContainer.API.EntityFrameworkCore.targets",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003801|",
+              "WhenOpened": "2025-10-15T01:25:03.572Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
+              "Title": "DepotContainer.WebUI",
+              "DocumentMoniker": "D:\\D\u1EF1 \u00E1n Depot\\DepotContainer\\DepotContainer.WebUI\\DepotContainer.WebUI.csproj",
+              "RelativeDocumentMoniker": "DepotContainer.WebUI\\DepotContainer.WebUI.csproj",
+              "ToolTip": "D:\\D\u1EF1 \u00E1n Depot\\DepotContainer\\DepotContainer.WebUI\\DepotContainer.WebUI.csproj",
+              "RelativeToolTip": "DepotContainer.WebUI\\DepotContainer.WebUI.csproj",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2025-10-14T10:08:04.476Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 21,
+              "Title": "login.css",
+              "DocumentMoniker": "D:\\D\u1EF1 \u00E1n Depot\\DepotContainer\\DepotContainer.WebUI\\wwwroot\\css\\login.css",
+              "RelativeDocumentMoniker": "DepotContainer.WebUI\\wwwroot\\css\\login.css",
+              "ToolTip": "D:\\D\u1EF1 \u00E1n Depot\\DepotContainer\\DepotContainer.WebUI\\wwwroot\\css\\login.css",
+              "RelativeToolTip": "DepotContainer.WebUI\\wwwroot\\css\\login.css",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAB8AAAAVAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
+              "WhenOpened": "2025-10-14T08:02:12.144Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 23,
+              "Title": "_LoginLayout.cshtml",
+              "DocumentMoniker": "D:\\D\u1EF1 \u00E1n Depot\\DepotContainer\\DepotContainer.WebUI\\Views\\Shared\\_LoginLayout.cshtml",
+              "RelativeDocumentMoniker": "DepotContainer.WebUI\\Views\\Shared\\_LoginLayout.cshtml",
+              "ToolTip": "D:\\D\u1EF1 \u00E1n Depot\\DepotContainer\\DepotContainer.WebUI\\Views\\Shared\\_LoginLayout.cshtml",
+              "RelativeToolTip": "DepotContainer.WebUI\\Views\\Shared\\_LoginLayout.cshtml",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAqwBIAAAApAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-10-14T07:51:54.765Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "_Layout.cshtml.css",
+              "DocumentMoniker": "D:\\D\u1EF1 \u00E1n Depot\\DepotContainer\\DepotContainer.WebUI\\Views\\Shared\\_Layout.cshtml.css",
+              "RelativeDocumentMoniker": "DepotContainer.WebUI\\Views\\Shared\\_Layout.cshtml.css",
+              "ToolTip": "D:\\D\u1EF1 \u00E1n Depot\\DepotContainer\\DepotContainer.WebUI\\Views\\Shared\\_Layout.cshtml.css",
+              "RelativeToolTip": "DepotContainer.WebUI\\Views\\Shared\\_Layout.cshtml.css",
+              "ViewState": "AgIAAAkAAAAAAAAAAAAAACcAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
+              "WhenOpened": "2025-10-14T07:16:27.121Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 28,
+              "Title": "launchSettings.json",
+              "DocumentMoniker": "D:\\D\u1EF1 \u00E1n Depot\\DepotContainer\\DepotContainer.WebUI\\Properties\\launchSettings.json",
+              "RelativeDocumentMoniker": "DepotContainer.WebUI\\Properties\\launchSettings.json",
+              "ToolTip": "D:\\D\u1EF1 \u00E1n Depot\\DepotContainer\\DepotContainer.WebUI\\Properties\\launchSettings.json",
+              "RelativeToolTip": "DepotContainer.WebUI\\Properties\\launchSettings.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2025-10-14T07:15:59.234Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 22,
+              "Title": "site.css",
+              "DocumentMoniker": "D:\\D\u1EF1 \u00E1n Depot\\DepotContainer\\DepotContainer.WebUI\\wwwroot\\css\\site.css",
+              "RelativeDocumentMoniker": "DepotContainer.WebUI\\wwwroot\\css\\site.css",
+              "ToolTip": "D:\\D\u1EF1 \u00E1n Depot\\DepotContainer\\DepotContainer.WebUI\\wwwroot\\css\\site.css",
+              "RelativeToolTip": "DepotContainer.WebUI\\wwwroot\\css\\site.css",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABIAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
+              "WhenOpened": "2025-10-14T07:13:50.958Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 18,
+              "Title": "HomeController.cs",
+              "DocumentMoniker": "D:\\D\u1EF1 \u00E1n Depot\\DepotContainer\\DepotContainer.WebUI\\Controllers\\HomeController.cs",
+              "RelativeDocumentMoniker": "DepotContainer.WebUI\\Controllers\\HomeController.cs",
+              "ToolTip": "D:\\D\u1EF1 \u00E1n Depot\\DepotContainer\\DepotContainer.WebUI\\Controllers\\HomeController.cs",
+              "RelativeToolTip": "DepotContainer.WebUI\\Controllers\\HomeController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABkAAAAYAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-14T06:57:26.317Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "_Layout.cshtml",
+              "DocumentMoniker": "D:\\D\u1EF1 \u00E1n Depot\\DepotContainer\\DepotContainer.WebUI\\Views\\Shared\\_Layout.cshtml",
+              "RelativeDocumentMoniker": "DepotContainer.WebUI\\Views\\Shared\\_Layout.cshtml",
+              "ToolTip": "D:\\D\u1EF1 \u00E1n Depot\\DepotContainer\\DepotContainer.WebUI\\Views\\Shared\\_Layout.cshtml",
+              "RelativeToolTip": "DepotContainer.WebUI\\Views\\Shared\\_Layout.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABcAAAAwAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-10-14T07:13:33.777Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 25,
+              "Title": "_ValidationScriptsPartial.cshtml",
+              "DocumentMoniker": "D:\\D\u1EF1 \u00E1n Depot\\DepotContainer\\DepotContainer.WebUI\\Views\\Shared\\_ValidationScriptsPartial.cshtml",
+              "RelativeDocumentMoniker": "DepotContainer.WebUI\\Views\\Shared\\_ValidationScriptsPartial.cshtml",
+              "ToolTip": "D:\\D\u1EF1 \u00E1n Depot\\DepotContainer\\DepotContainer.WebUI\\Views\\Shared\\_ValidationScriptsPartial.cshtml",
+              "RelativeToolTip": "DepotContainer.WebUI\\Views\\Shared\\_ValidationScriptsPartial.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-10-14T07:13:33.176Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 26,
+              "Title": "Error.cshtml",
+              "DocumentMoniker": "D:\\D\u1EF1 \u00E1n Depot\\DepotContainer\\DepotContainer.WebUI\\Views\\Shared\\Error.cshtml",
+              "RelativeDocumentMoniker": "DepotContainer.WebUI\\Views\\Shared\\Error.cshtml",
+              "ToolTip": "D:\\D\u1EF1 \u00E1n Depot\\DepotContainer\\DepotContainer.WebUI\\Views\\Shared\\Error.cshtml",
+              "RelativeToolTip": "DepotContainer.WebUI\\Views\\Shared\\Error.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-10-14T07:13:32.533Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 27,
+              "Title": "_ViewStart.cshtml",
+              "DocumentMoniker": "D:\\D\u1EF1 \u00E1n Depot\\DepotContainer\\DepotContainer.WebUI\\Views\\_ViewStart.cshtml",
+              "RelativeDocumentMoniker": "DepotContainer.WebUI\\Views\\_ViewStart.cshtml",
+              "ToolTip": "D:\\D\u1EF1 \u00E1n Depot\\DepotContainer\\DepotContainer.WebUI\\Views\\_ViewStart.cshtml",
+              "RelativeToolTip": "DepotContainer.WebUI\\Views\\_ViewStart.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-10-14T07:13:28.224Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "_ViewImports.cshtml",
+              "DocumentMoniker": "D:\\D\u1EF1 \u00E1n Depot\\DepotContainer\\DepotContainer.WebUI\\Views\\_ViewImports.cshtml",
+              "RelativeDocumentMoniker": "DepotContainer.WebUI\\Views\\_ViewImports.cshtml",
+              "ToolTip": "D:\\D\u1EF1 \u00E1n Depot\\DepotContainer\\DepotContainer.WebUI\\Views\\_ViewImports.cshtml",
+              "RelativeToolTip": "DepotContainer.WebUI\\Views\\_ViewImports.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-10-14T07:13:27.337Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "D:\\D\u1EF1 \u00E1n Depot\\DepotContainer\\DepotContainer.WebUI\\Views\\Home\\Index.cshtml",
+              "RelativeDocumentMoniker": "DepotContainer.WebUI\\Views\\Home\\Index.cshtml",
+              "ToolTip": "D:\\D\u1EF1 \u00E1n Depot\\DepotContainer\\DepotContainer.WebUI\\Views\\Home\\Index.cshtml",
+              "RelativeToolTip": "DepotContainer.WebUI\\Views\\Home\\Index.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-10-14T07:12:03.916Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 20,
+              "Title": "Login.cshtml",
+              "DocumentMoniker": "D:\\D\u1EF1 \u00E1n Depot\\DepotContainer\\DepotContainer.WebUI\\Views\\Login\\Login.cshtml",
+              "RelativeDocumentMoniker": "DepotContainer.WebUI\\Views\\Login\\Login.cshtml",
+              "ToolTip": "D:\\D\u1EF1 \u00E1n Depot\\DepotContainer\\DepotContainer.WebUI\\Views\\Login\\Login.cshtml",
+              "RelativeToolTip": "DepotContainer.WebUI\\Views\\Login\\Login.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABkAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-10-14T07:08:44.287Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "LoginController.cs",
+              "DocumentMoniker": "D:\\D\u1EF1 \u00E1n Depot\\DepotContainer\\DepotContainer.WebUI\\Controllers\\LoginController.cs",
+              "RelativeDocumentMoniker": "DepotContainer.WebUI\\Controllers\\LoginController.cs",
+              "ToolTip": "D:\\D\u1EF1 \u00E1n Depot\\DepotContainer\\DepotContainer.WebUI\\Controllers\\LoginController.cs",
+              "RelativeToolTip": "DepotContainer.WebUI\\Controllers\\LoginController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABQAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-14T07:03:54.764Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "ErrorViewModel.cs",
+              "DocumentMoniker": "D:\\D\u1EF1 \u00E1n Depot\\DepotContainer\\DepotContainer.WebUI\\Models\\ErrorViewModel.cs",
+              "RelativeDocumentMoniker": "DepotContainer.WebUI\\Models\\ErrorViewModel.cs",
+              "ToolTip": "D:\\D\u1EF1 \u00E1n Depot\\DepotContainer\\DepotContainer.WebUI\\Models\\ErrorViewModel.cs",
+              "RelativeToolTip": "DepotContainer.WebUI\\Models\\ErrorViewModel.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-14T06:57:00.644Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "LoginViewModel.cs",
+              "DocumentMoniker": "D:\\D\u1EF1 \u00E1n Depot\\DepotContainer\\DepotContainer.WebUI\\Models\\LoginViewModel.cs",
+              "RelativeDocumentMoniker": "DepotContainer.WebUI\\Models\\LoginViewModel.cs",
+              "ToolTip": "D:\\D\u1EF1 \u00E1n Depot\\DepotContainer\\DepotContainer.WebUI\\Models\\LoginViewModel.cs",
+              "RelativeToolTip": "DepotContainer.WebUI\\Models\\LoginViewModel.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-14T06:56:54.372Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 34,
+              "Title": "SlotStatus.cs",
+              "DocumentMoniker": "D:\\D\u1EF1 \u00E1n Depot\\DepotContainer\\DepotContainer.Domain\\Enum\\SlotStatus.cs",
+              "RelativeDocumentMoniker": "DepotContainer.Domain\\Enum\\SlotStatus.cs",
+              "ToolTip": "D:\\D\u1EF1 \u00E1n Depot\\DepotContainer\\DepotContainer.Domain\\Enum\\SlotStatus.cs",
+              "RelativeToolTip": "DepotContainer.Domain\\Enum\\SlotStatus.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-14T06:10:28.265Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 35,
+              "Title": "StaffType.cs",
+              "DocumentMoniker": "D:\\D\u1EF1 \u00E1n Depot\\DepotContainer\\DepotContainer.Domain\\Enum\\StaffType.cs",
+              "RelativeDocumentMoniker": "DepotContainer.Domain\\Enum\\StaffType.cs",
+              "ToolTip": "D:\\D\u1EF1 \u00E1n Depot\\DepotContainer\\DepotContainer.Domain\\Enum\\StaffType.cs",
+              "RelativeToolTip": "DepotContainer.Domain\\Enum\\StaffType.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAANAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-14T04:11:24.918Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 38,
+              "Title": "StaffRepository.cs",
+              "DocumentMoniker": "D:\\D\u1EF1 \u00E1n Depot\\DepotContainer\\DepotContainer.Infrastructure\\Repositories\\StaffRepository.cs",
+              "RelativeDocumentMoniker": "DepotContainer.Infrastructure\\Repositories\\StaffRepository.cs",
+              "ToolTip": "D:\\D\u1EF1 \u00E1n Depot\\DepotContainer\\DepotContainer.Infrastructure\\Repositories\\StaffRepository.cs",
+              "RelativeToolTip": "DepotContainer.Infrastructure\\Repositories\\StaffRepository.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAC0AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-14T04:03:02.665Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "StaffController.cs",
+              "DocumentMoniker": "D:\\D\u1EF1 \u00E1n Depot\\DepotContainer\\DepotContainer.API\\Controllers\\StaffController.cs",
+              "RelativeDocumentMoniker": "DepotContainer.API\\Controllers\\StaffController.cs",
+              "ToolTip": "D:\\D\u1EF1 \u00E1n Depot\\DepotContainer\\DepotContainer.API\\Controllers\\StaffController.cs",
+              "RelativeToolTip": "DepotContainer.API\\Controllers\\StaffController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAADcAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-14T03:50:54.102Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 36,
+              "Title": "Staff.cs",
+              "DocumentMoniker": "D:\\D\u1EF1 \u00E1n Depot\\DepotContainer\\DepotContainer.Domain\\Entites\\Staff.cs",
+              "RelativeDocumentMoniker": "DepotContainer.Domain\\Entites\\Staff.cs",
+              "ToolTip": "D:\\D\u1EF1 \u00E1n Depot\\DepotContainer\\DepotContainer.Domain\\Entites\\Staff.cs",
+              "RelativeToolTip": "DepotContainer.Domain\\Entites\\Staff.cs",
+              "ViewState": "AgIAAAEAAAAAAAAAAAAcwBMAAAAXAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-14T03:23:52.268Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "EirDtos.cs",
+              "DocumentMoniker": "D:\\D\u1EF1 \u00E1n Depot\\DepotContainer\\DepotContainer.Application\\DTOs\\EirDtos.cs",
+              "RelativeDocumentMoniker": "DepotContainer.Application\\DTOs\\EirDtos.cs",
+              "ToolTip": "D:\\D\u1EF1 \u00E1n Depot\\DepotContainer\\DepotContainer.Application\\DTOs\\EirDtos.cs",
+              "RelativeToolTip": "DepotContainer.Application\\DTOs\\EirDtos.cs",
+              "ViewState": "AgIAABkAAAAAAAAAAAAqwBUAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-13T08:55:03.132Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 19,
+              "Title": "Program.cs",
+              "DocumentMoniker": "D:\\D\u1EF1 \u00E1n Depot\\DepotContainer\\DepotContainer.WebUI\\Program.cs",
+              "RelativeDocumentMoniker": "DepotContainer.WebUI\\Program.cs",
+              "ToolTip": "D:\\D\u1EF1 \u00E1n Depot\\DepotContainer\\DepotContainer.WebUI\\Program.cs",
+              "RelativeToolTip": "DepotContainer.WebUI\\Program.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAACMAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-13T08:08:45.658Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 29,
+              "Title": "appsettings.Development.json",
+              "DocumentMoniker": "D:\\D\u1EF1 \u00E1n Depot\\DepotContainer\\DepotContainer.WebUI\\appsettings.Development.json",
+              "RelativeDocumentMoniker": "DepotContainer.WebUI\\appsettings.Development.json",
+              "ToolTip": "D:\\D\u1EF1 \u00E1n Depot\\DepotContainer\\DepotContainer.WebUI\\appsettings.Development.json",
+              "RelativeToolTip": "DepotContainer.WebUI\\appsettings.Development.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2025-10-13T08:08:41.666Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 17,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "D:\\D\u1EF1 \u00E1n Depot\\DepotContainer\\DepotContainer.WebUI\\appsettings.json",
+              "RelativeDocumentMoniker": "DepotContainer.WebUI\\appsettings.json",
+              "ToolTip": "D:\\D\u1EF1 \u00E1n Depot\\DepotContainer\\DepotContainer.WebUI\\appsettings.json",
+              "RelativeToolTip": "DepotContainer.WebUI\\appsettings.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAACAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2025-10-13T08:08:39.513Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 40,
+              "Title": "BlockRepository.cs",
+              "DocumentMoniker": "D:\\D\u1EF1 \u00E1n Depot\\DepotContainer\\DepotContainer.Infrastructure\\Repositories\\BlockRepository.cs",
+              "RelativeDocumentMoniker": "DepotContainer.Infrastructure\\Repositories\\BlockRepository.cs",
+              "ToolTip": "D:\\D\u1EF1 \u00E1n Depot\\DepotContainer\\DepotContainer.Infrastructure\\Repositories\\BlockRepository.cs",
+              "RelativeToolTip": "DepotContainer.Infrastructure\\Repositories\\BlockRepository.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAuwBcAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-13T07:27:37.549Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "DepotDbContext.cs",
+              "DocumentMoniker": "D:\\D\u1EF1 \u00E1n Depot\\DepotContainer\\DepotContainer.Infrastructure\\Data\\DepotDbContext.cs",
+              "RelativeDocumentMoniker": "DepotContainer.Infrastructure\\Data\\DepotDbContext.cs",
+              "ToolTip": "D:\\D\u1EF1 \u00E1n Depot\\DepotContainer\\DepotContainer.Infrastructure\\Data\\DepotDbContext.cs",
+              "RelativeToolTip": "DepotContainer.Infrastructure\\Data\\DepotDbContext.cs",
+              "ViewState": "AgIAAA8AAAAAAAAAAAA0wCQAAABRAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-10T02:53:30.74Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 42,
+              "Title": "SlotRepository.cs",
+              "DocumentMoniker": "D:\\D\u1EF1 \u00E1n Depot\\DepotContainer\\DepotContainer.Infrastructure\\Repositories\\SlotRepository.cs",
+              "RelativeDocumentMoniker": "DepotContainer.Infrastructure\\Repositories\\SlotRepository.cs",
+              "ToolTip": "D:\\D\u1EF1 \u00E1n Depot\\DepotContainer\\DepotContainer.Infrastructure\\Repositories\\SlotRepository.cs",
+              "RelativeToolTip": "DepotContainer.Infrastructure\\Repositories\\SlotRepository.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABcAAAAjAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-13T07:29:20.286Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "BookingRepository.cs",
+              "DocumentMoniker": "D:\\D\u1EF1 \u00E1n Depot\\DepotContainer\\DepotContainer.Infrastructure\\Repositories\\BookingRepository.cs",
+              "RelativeDocumentMoniker": "DepotContainer.Infrastructure\\Repositories\\BookingRepository.cs",
+              "ToolTip": "D:\\D\u1EF1 \u00E1n Depot\\DepotContainer\\DepotContainer.Infrastructure\\Repositories\\BookingRepository.cs",
+              "RelativeToolTip": "DepotContainer.Infrastructure\\Repositories\\BookingRepository.cs",
+              "ViewState": "AgIAAAgAAAAAAAAAAAAAwCgAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-09T04:16:27.4Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "DepotContainer.Infrastructure.csproj",
+              "DocumentMoniker": "D:\\D\u1EF1 \u00E1n Depot\\DepotContainer\\DepotContainer.Infrastructure\\DepotContainer.Infrastructure.csproj",
+              "RelativeDocumentMoniker": "DepotContainer.Infrastructure\\DepotContainer.Infrastructure.csproj",
+              "ToolTip": "D:\\D\u1EF1 \u00E1n Depot\\DepotContainer\\DepotContainer.Infrastructure\\DepotContainer.Infrastructure.csproj",
+              "RelativeToolTip": "DepotContainer.Infrastructure\\DepotContainer.Infrastructure.csproj",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAACAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2025-10-10T03:40:44.928Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 37,
+              "Title": "Program.cs",
+              "DocumentMoniker": "D:\\D\u1EF1 \u00E1n Depot\\DepotContainer\\DepotContainer.API\\Program.cs",
+              "RelativeDocumentMoniker": "DepotContainer.API\\Program.cs",
+              "ToolTip": "D:\\D\u1EF1 \u00E1n Depot\\DepotContainer\\DepotContainer.API\\Program.cs",
+              "RelativeToolTip": "DepotContainer.API\\Program.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABgAAAA6AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-12T10:46:01.417Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 33,
+              "Title": "Slot.cs",
+              "DocumentMoniker": "D:\\D\u1EF1 \u00E1n Depot\\DepotContainer\\DepotContainer.Domain\\Entites\\Slot.cs",
+              "RelativeDocumentMoniker": "DepotContainer.Domain\\Entites\\Slot.cs",
+              "ToolTip": "D:\\D\u1EF1 \u00E1n Depot\\DepotContainer\\DepotContainer.Domain\\Entites\\Slot.cs",
+              "RelativeToolTip": "DepotContainer.Domain\\Entites\\Slot.cs",
+              "ViewState": "AgIAAA0AAAAAAAAAAAAQwB8AAAAfAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-09T04:22:03.62Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 44,
+              "Title": "ContainerRepository.cs",
+              "DocumentMoniker": "D:\\D\u1EF1 \u00E1n Depot\\DepotContainer\\DepotContainer.Infrastructure\\Repositories\\ContainerRepository.cs",
+              "RelativeDocumentMoniker": "DepotContainer.Infrastructure\\Repositories\\ContainerRepository.cs",
+              "ToolTip": "D:\\D\u1EF1 \u00E1n Depot\\DepotContainer\\DepotContainer.Infrastructure\\Repositories\\ContainerRepository.cs",
+              "RelativeToolTip": "DepotContainer.Infrastructure\\Repositories\\ContainerRepository.cs",
+              "ViewState": "AgIAAAQAAAAAAAAAAAAWwCEAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-09T04:16:26.618Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 45,
+              "Title": "DependencyInjection.cs",
+              "DocumentMoniker": "D:\\D\u1EF1 \u00E1n Depot\\DepotContainer\\DepotContainer.Infrastructure\\Repositories\\DependencyInjection.cs",
+              "RelativeDocumentMoniker": "DepotContainer.Infrastructure\\Repositories\\DependencyInjection.cs",
+              "ToolTip": "D:\\D\u1EF1 \u00E1n Depot\\DepotContainer\\DepotContainer.Infrastructure\\Repositories\\DependencyInjection.cs",
+              "RelativeToolTip": "DepotContainer.Infrastructure\\Repositories\\DependencyInjection.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABQAAAAmAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-12T10:53:02.21Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "CustomerRepository.cs",
+              "DocumentMoniker": "D:\\D\u1EF1 \u00E1n Depot\\DepotContainer\\DepotContainer.Infrastructure\\Repositories\\CustomerRepository.cs",
+              "RelativeDocumentMoniker": "DepotContainer.Infrastructure\\Repositories\\CustomerRepository.cs",
+              "ToolTip": "D:\\D\u1EF1 \u00E1n Depot\\DepotContainer\\DepotContainer.Infrastructure\\Repositories\\CustomerRepository.cs",
+              "RelativeToolTip": "DepotContainer.Infrastructure\\Repositories\\CustomerRepository.cs",
+              "ViewState": "AgIAABIAAAAAAAAAAAAYwAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-09T06:26:13.915Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 24,
+              "Title": "DepotContainer.WebUI.csproj",
+              "DocumentMoniker": "D:\\D\u1EF1 \u00E1n Depot\\DepotContainer\\DepotContainer.WebUI\\DepotContainer.WebUI.csproj",
+              "RelativeDocumentMoniker": "DepotContainer.WebUI\\DepotContainer.WebUI.csproj",
+              "ToolTip": "D:\\D\u1EF1 \u00E1n Depot\\DepotContainer\\DepotContainer.WebUI\\DepotContainer.WebUI.csproj",
+              "RelativeToolTip": "DepotContainer.WebUI\\DepotContainer.WebUI.csproj",
+              "ViewState": "AgIAABUAAAAAAAAAAAAAABUAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2025-10-13T02:18:52.058Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 41,
+              "Title": "DepotContainer.UnitTests.csproj",
+              "DocumentMoniker": "D:\\D\u1EF1 \u00E1n Depot\\DepotContainer\\DepotContainer.UnitTests\\DepotContainer.UnitTests.csproj",
+              "RelativeDocumentMoniker": "DepotContainer.UnitTests\\DepotContainer.UnitTests.csproj",
+              "ToolTip": "D:\\D\u1EF1 \u00E1n Depot\\DepotContainer\\DepotContainer.UnitTests\\DepotContainer.UnitTests.csproj",
+              "RelativeToolTip": "DepotContainer.UnitTests\\DepotContainer.UnitTests.csproj",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2025-10-13T01:57:02.51Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 30,
+              "Title": "EirRepository.cs",
+              "DocumentMoniker": "D:\\D\u1EF1 \u00E1n Depot\\DepotContainer\\DepotContainer.Infrastructure\\Repositories\\EirRepository.cs",
+              "RelativeDocumentMoniker": "DepotContainer.Infrastructure\\Repositories\\EirRepository.cs",
+              "ToolTip": "D:\\D\u1EF1 \u00E1n Depot\\DepotContainer\\DepotContainer.Infrastructure\\Repositories\\EirRepository.cs",
+              "RelativeToolTip": "DepotContainer.Infrastructure\\Repositories\\EirRepository.cs",
+              "ViewState": "AgIAACQAAAAAAAAAAAAqwA8AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-09T04:01:48.829Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 43,
+              "Title": "GenericRepository.cs",
+              "DocumentMoniker": "D:\\D\u1EF1 \u00E1n Depot\\DepotContainer\\DepotContainer.Infrastructure\\Repositories\\GenericRepository.cs",
+              "RelativeDocumentMoniker": "DepotContainer.Infrastructure\\Repositories\\GenericRepository.cs",
+              "ToolTip": "D:\\D\u1EF1 \u00E1n Depot\\DepotContainer\\DepotContainer.Infrastructure\\Repositories\\GenericRepository.cs",
+              "RelativeToolTip": "DepotContainer.Infrastructure\\Repositories\\GenericRepository.cs",
+              "ViewState": "AgIAAA8AAAAAAAAAAAAYwAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-09T04:01:18.298Z"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

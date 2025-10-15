@@ -1,0 +1,38 @@
+D:\Dự án Thực Tập\DepotContainer\DepotContainer.Infrastructure\bin\Debug\net8.0\DepotContainer.Infrastructure.deps.json
+D:\Dự án Thực Tập\DepotContainer\DepotContainer.Infrastructure\bin\Debug\net8.0\DepotContainer.Infrastructure.runtimeconfig.json
+D:\Dự án Thực Tập\DepotContainer\DepotContainer.Infrastructure\bin\Debug\net8.0\DepotContainer.Infrastructure.dll
+D:\Dự án Thực Tập\DepotContainer\DepotContainer.Infrastructure\bin\Debug\net8.0\DepotContainer.Infrastructure.pdb
+D:\Dự án Thực Tập\DepotContainer\DepotContainer.Infrastructure\bin\Debug\net8.0\DepotContainer.Application.dll
+D:\Dự án Thực Tập\DepotContainer\DepotContainer.Infrastructure\bin\Debug\net8.0\DepotContainer.Domain.dll
+D:\Dự án Thực Tập\DepotContainer\DepotContainer.Infrastructure\bin\Debug\net8.0\DepotContainer.Domain.pdb
+D:\Dự án Thực Tập\DepotContainer\DepotContainer.Infrastructure\bin\Debug\net8.0\DepotContainer.Application.pdb
+D:\Dự án Thực Tập\DepotContainer\DepotContainer.Infrastructure\obj\Debug\net8.0\DepotContainer.Infrastructure.csproj.AssemblyReference.cache
+D:\Dự án Thực Tập\DepotContainer\DepotContainer.Infrastructure\obj\Debug\net8.0\DepotContainer.Infrastructure.GeneratedMSBuildEditorConfig.editorconfig
+D:\Dự án Thực Tập\DepotContainer\DepotContainer.Infrastructure\obj\Debug\net8.0\DepotContainer.Infrastructure.AssemblyInfoInputs.cache
+D:\Dự án Thực Tập\DepotContainer\DepotContainer.Infrastructure\obj\Debug\net8.0\DepotContainer.Infrastructure.AssemblyInfo.cs
+D:\Dự án Thực Tập\DepotContainer\DepotContainer.Infrastructure\obj\Debug\net8.0\DepotContainer.Infrastructure.csproj.CoreCompileInputs.cache
+D:\Dự án Thực Tập\DepotContainer\DepotContainer.Infrastructure\obj\Debug\net8.0\DepotCon.B4924306.Up2Date
+D:\Dự án Thực Tập\DepotContainer\DepotContainer.Infrastructure\obj\Debug\net8.0\DepotContainer.Infrastructure.dll
+D:\Dự án Thực Tập\DepotContainer\DepotContainer.Infrastructure\obj\Debug\net8.0\refint\DepotContainer.Infrastructure.dll
+D:\Dự án Thực Tập\DepotContainer\DepotContainer.Infrastructure\obj\Debug\net8.0\DepotContainer.Infrastructure.pdb
+D:\Dự án Thực Tập\DepotContainer\DepotContainer.Infrastructure\obj\Debug\net8.0\DepotContainer.Infrastructure.genruntimeconfig.cache
+D:\Dự án Thực Tập\DepotContainer\DepotContainer.Infrastructure\obj\Debug\net8.0\ref\DepotContainer.Infrastructure.dll
+D:\Dự án Depot\DepotContainer\DepotContainer.Infrastructure\bin\Debug\net8.0\DepotContainer.Infrastructure.deps.json
+D:\Dự án Depot\DepotContainer\DepotContainer.Infrastructure\bin\Debug\net8.0\DepotContainer.Infrastructure.runtimeconfig.json
+D:\Dự án Depot\DepotContainer\DepotContainer.Infrastructure\bin\Debug\net8.0\DepotContainer.Infrastructure.dll
+D:\Dự án Depot\DepotContainer\DepotContainer.Infrastructure\bin\Debug\net8.0\DepotContainer.Infrastructure.pdb
+D:\Dự án Depot\DepotContainer\DepotContainer.Infrastructure\bin\Debug\net8.0\DepotContainer.Application.dll
+D:\Dự án Depot\DepotContainer\DepotContainer.Infrastructure\bin\Debug\net8.0\DepotContainer.Domain.dll
+D:\Dự án Depot\DepotContainer\DepotContainer.Infrastructure\bin\Debug\net8.0\DepotContainer.Domain.pdb
+D:\Dự án Depot\DepotContainer\DepotContainer.Infrastructure\bin\Debug\net8.0\DepotContainer.Application.pdb
+D:\Dự án Depot\DepotContainer\DepotContainer.Infrastructure\obj\Debug\net8.0\DepotContainer.Infrastructure.csproj.AssemblyReference.cache
+D:\Dự án Depot\DepotContainer\DepotContainer.Infrastructure\obj\Debug\net8.0\DepotContainer.Infrastructure.GeneratedMSBuildEditorConfig.editorconfig
+D:\Dự án Depot\DepotContainer\DepotContainer.Infrastructure\obj\Debug\net8.0\DepotContainer.Infrastructure.AssemblyInfoInputs.cache
+D:\Dự án Depot\DepotContainer\DepotContainer.Infrastructure\obj\Debug\net8.0\DepotContainer.Infrastructure.AssemblyInfo.cs
+D:\Dự án Depot\DepotContainer\DepotContainer.Infrastructure\obj\Debug\net8.0\DepotContainer.Infrastructure.csproj.CoreCompileInputs.cache
+D:\Dự án Depot\DepotContainer\DepotContainer.Infrastructure\obj\Debug\net8.0\DepotCon.B4924306.Up2Date
+D:\Dự án Depot\DepotContainer\DepotContainer.Infrastructure\obj\Debug\net8.0\DepotContainer.Infrastructure.dll
+D:\Dự án Depot\DepotContainer\DepotContainer.Infrastructure\obj\Debug\net8.0\refint\DepotContainer.Infrastructure.dll
+D:\Dự án Depot\DepotContainer\DepotContainer.Infrastructure\obj\Debug\net8.0\DepotContainer.Infrastructure.pdb
+D:\Dự án Depot\DepotContainer\DepotContainer.Infrastructure\obj\Debug\net8.0\DepotContainer.Infrastructure.genruntimeconfig.cache
+D:\Dự án Depot\DepotContainer\DepotContainer.Infrastructure\obj\Debug\net8.0\ref\DepotContainer.Infrastructure.dll

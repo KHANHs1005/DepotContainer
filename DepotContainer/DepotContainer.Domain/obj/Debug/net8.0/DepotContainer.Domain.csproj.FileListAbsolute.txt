@@ -1,0 +1,22 @@
+D:\Dự án Thực Tập\DepotContainer\DepotContainer.Domain\bin\Debug\net8.0\DepotContainer.Domain.deps.json
+D:\Dự án Thực Tập\DepotContainer\DepotContainer.Domain\bin\Debug\net8.0\DepotContainer.Domain.dll
+D:\Dự án Thực Tập\DepotContainer\DepotContainer.Domain\bin\Debug\net8.0\DepotContainer.Domain.pdb
+D:\Dự án Thực Tập\DepotContainer\DepotContainer.Domain\obj\Debug\net8.0\DepotContainer.Domain.GeneratedMSBuildEditorConfig.editorconfig
+D:\Dự án Thực Tập\DepotContainer\DepotContainer.Domain\obj\Debug\net8.0\DepotContainer.Domain.AssemblyInfoInputs.cache
+D:\Dự án Thực Tập\DepotContainer\DepotContainer.Domain\obj\Debug\net8.0\DepotContainer.Domain.AssemblyInfo.cs
+D:\Dự án Thực Tập\DepotContainer\DepotContainer.Domain\obj\Debug\net8.0\DepotContainer.Domain.csproj.CoreCompileInputs.cache
+D:\Dự án Thực Tập\DepotContainer\DepotContainer.Domain\obj\Debug\net8.0\DepotContainer.Domain.dll
+D:\Dự án Thực Tập\DepotContainer\DepotContainer.Domain\obj\Debug\net8.0\refint\DepotContainer.Domain.dll
+D:\Dự án Thực Tập\DepotContainer\DepotContainer.Domain\obj\Debug\net8.0\DepotContainer.Domain.pdb
+D:\Dự án Thực Tập\DepotContainer\DepotContainer.Domain\obj\Debug\net8.0\ref\DepotContainer.Domain.dll
+D:\Dự án Depot\DepotContainer\DepotContainer.Domain\bin\Debug\net8.0\DepotContainer.Domain.deps.json
+D:\Dự án Depot\DepotContainer\DepotContainer.Domain\bin\Debug\net8.0\DepotContainer.Domain.dll
+D:\Dự án Depot\DepotContainer\DepotContainer.Domain\bin\Debug\net8.0\DepotContainer.Domain.pdb
+D:\Dự án Depot\DepotContainer\DepotContainer.Domain\obj\Debug\net8.0\DepotContainer.Domain.GeneratedMSBuildEditorConfig.editorconfig
+D:\Dự án Depot\DepotContainer\DepotContainer.Domain\obj\Debug\net8.0\DepotContainer.Domain.AssemblyInfoInputs.cache
+D:\Dự án Depot\DepotContainer\DepotContainer.Domain\obj\Debug\net8.0\DepotContainer.Domain.AssemblyInfo.cs
+D:\Dự án Depot\DepotContainer\DepotContainer.Domain\obj\Debug\net8.0\DepotContainer.Domain.csproj.CoreCompileInputs.cache
+D:\Dự án Depot\DepotContainer\DepotContainer.Domain\obj\Debug\net8.0\DepotContainer.Domain.dll
+D:\Dự án Depot\DepotContainer\DepotContainer.Domain\obj\Debug\net8.0\refint\DepotContainer.Domain.dll
+D:\Dự án Depot\DepotContainer\DepotContainer.Domain\obj\Debug\net8.0\DepotContainer.Domain.pdb
+D:\Dự án Depot\DepotContainer\DepotContainer.Domain\obj\Debug\net8.0\ref\DepotContainer.Domain.dll
