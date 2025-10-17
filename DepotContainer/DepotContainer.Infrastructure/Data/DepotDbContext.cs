@@ -12,7 +12,7 @@ namespace DepotContainer.Infrastructure.Data
         }
 
         // === DbSet cho toàn bộ entity trong hệ thống ===
-        public DbSet<Container> Containers { get; set; }
+        public DbSet<Container> Containers { get; set; } 
         public DbSet<EIR> Eirs { get; set; }
         public DbSet<Block> Blocks { get; set; }
         public DbSet<Slot> Slots { get; set; }
@@ -36,6 +36,14 @@ namespace DepotContainer.Infrastructure.Data
                 entity.Property(e => e.StaffName).IsRequired().HasMaxLength(100);
                 entity.Property(e => e.ContactPhone).HasMaxLength(20);
             });
+
+            modelBuilder.Entity<Staff>(entity =>
+            {
+                entity.ToTable("Staff"); // mapping tới bảng có sẵn trong SQL
+                entity.Property(e => e.StaffName).IsRequired().HasMaxLength(100);
+                entity.Property(e => e.ContactPhone).HasMaxLength(20);
+            });
         }
+
     }
 }

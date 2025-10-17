@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("DepotContainer.Application")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+977d955e355ec17514c67355698d35f51560616d")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+c0c721917b2016f60a37be3b8b05f10c00eb8a90")]
 [assembly: System.Reflection.AssemblyProductAttribute("DepotContainer.Application")]
 [assembly: System.Reflection.AssemblyTitleAttribute("DepotContainer.Application")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

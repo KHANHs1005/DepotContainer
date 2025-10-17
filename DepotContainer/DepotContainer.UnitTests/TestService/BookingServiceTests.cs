@@ -5,7 +5,7 @@ using DepotContainer.Domain.Entities;
 using Moq;
 using Xunit;
 
-namespace ServiceTests
+namespace DepotContainer.UnitTests.TestService
 {
     public class BookingServiceTests
     {

@@ -37,6 +37,7 @@ builder.Services.AddDbContext<DepotDbContext>(options =>
 builder.Services.AddScoped<IStaffRepository, StaffRepository>();
 builder.Services.AddScoped<IStaffService, StaffService>();
 
+
 // 📦 Container
 builder.Services.AddScoped<IContainerRepository, ContainerRepository>();
 builder.Services.AddScoped<IContainerService, ContainerService>();

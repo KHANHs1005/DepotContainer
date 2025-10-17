@@ -316,4 +316,3 @@ D:\Dự án Depot\DepotContainer\DepotContainer.API\obj\Debug\net8.0\refint\Depo
 D:\Dự án Depot\DepotContainer\DepotContainer.API\obj\Debug\net8.0\DepotContainer.API.pdb
 D:\Dự án Depot\DepotContainer\DepotContainer.API\obj\Debug\net8.0\DepotContainer.API.genruntimeconfig.cache
 D:\Dự án Depot\DepotContainer\DepotContainer.API\obj\Debug\net8.0\ref\DepotContainer.API.dll
-D:\Dự án Depot\DepotContainer\DepotContainer.API\obj\Debug\net8.0\staticwebassets.upToDateCheck.txt

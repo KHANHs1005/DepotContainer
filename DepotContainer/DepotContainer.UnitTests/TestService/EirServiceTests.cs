@@ -7,7 +7,7 @@ using Moq;
 using Xunit;
 using System.Text.RegularExpressions;
 
-namespace ServiceTests
+namespace DepotContainer.UnitTests.TestService
 {
     public class EirServiceTests
     {

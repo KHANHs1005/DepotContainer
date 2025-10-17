@@ -25,7 +25,7 @@ namespace DepotContainer.API.Controllers
         [HttpGet("{id}")]
         public async Task<IActionResult> GetById(int id)
         {
-            var booking = await _bookingService.GetByIdAsync(id);
+            var booking = await _bookingService.GetByIdAsync(id);   
             if (booking == null) return NotFound();
             return Ok(booking);
         }

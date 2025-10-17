@@ -23,10 +23,16 @@ namespace DepotContainer.Domain.Entities
         [Column("is_active")]
         public bool IsActive { get; set; } = true;
 
-        // staff_type IN ('cont_handler','gate_administrator','doc_staff','admin')
         [Column("staff_type")]
         [MaxLength(30)]
+
         public string? StaffType { get; set; }
+        [Column("username")]
+        [MaxLength(50)]
+        public string Username { get; set; } = string.Empty;
+
+        public string? Password { get; set; }
+
 
         public ICollection<EIR>? EIRs { get; set; }
         public ICollection<ContainerMovementHis>? ContainerMovementHis { get; set; }
