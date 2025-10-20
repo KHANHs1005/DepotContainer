@@ -1,5 +1,21 @@
 [
   {
+    "ContainingType": "DepotContainer.API.Controllers.AuthController",
+    "Method": "Login",
+    "RelativePath": "api/Auth/login",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "request",
+        "Type": "DepotContainer.API.Controllers.LoginRequest",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
     "ContainingType": "DepotContainer.API.Controllers.BookingController",
     "Method": "GetAll",
     "RelativePath": "api/Booking",

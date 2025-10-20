@@ -13,6 +13,8 @@ namespace DepotContainer.Application
             services.AddScoped<IContainerService, ContainerService>();
             services.AddScoped<ICustomerService, CustomerService>();
             services.AddScoped<IEirService, EirService>();
+            services.AddScoped<IAuthService, AuthService>();
+
 
             return services;
         }

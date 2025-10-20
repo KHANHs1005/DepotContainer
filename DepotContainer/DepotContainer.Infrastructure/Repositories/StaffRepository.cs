@@ -32,7 +32,7 @@ namespace DepotContainer.Infrastructure.Repositories
         public async Task<Staff?> GetByUsernameAsync(string username)
         {
             return await _context.Staffs
-                .FirstOrDefaultAsync(s => s.StaffName == username);
+                .FirstOrDefaultAsync(s => s.Username == username);
         }
 
         public async Task AddAsync(Staff staff)

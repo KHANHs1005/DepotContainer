@@ -14,7 +14,7 @@ builder.Services.AddCors(options =>
     options.AddPolicy("AllowAngularApp",
         policy =>
         {
-            policy.WithOrigins("http://localhost:4200")
+            policy.WithOrigins("http://localhost:52259")
                   .AllowAnyHeader()
                   .AllowAnyMethod();
         });
@@ -56,9 +56,6 @@ builder.Services.AddScoped<ICustomerService, CustomerService>();
 builder.Services.AddScoped<IEirRepository, EirRepository>();
 builder.Services.AddScoped<IEirService, EirService>();
 
-// -------------------------------
-// Build app
-// -------------------------------
 var app = builder.Build();
 
 if (app.Environment.IsDevelopment())
@@ -67,7 +64,6 @@ if (app.Environment.IsDevelopment())
     app.UseSwaggerUI();
 }
 
-// ✅ Bật CORS
 app.UseCors("AllowAngularApp");
 
 app.UseHttpsRedirection();
