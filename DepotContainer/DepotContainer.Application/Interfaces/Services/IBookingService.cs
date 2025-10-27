@@ -9,5 +9,7 @@ namespace DepotContainer.Application.Interfaces.Services
         Task<BookingDto> CreateAsync(CreateBookingDto dto);
         Task UpdateAsync(UpdateBookingDto dto);
         Task DeleteAsync(int id);
+        Task<BookingDetailDto?> GetBookingDetailsAsync(int id);
+        Task<BookingDetailDto?> GetBookingDetailsByNumberAsync(string bookingNumber);
     }
 }

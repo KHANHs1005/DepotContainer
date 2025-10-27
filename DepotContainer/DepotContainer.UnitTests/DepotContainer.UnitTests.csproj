@@ -30,7 +30,6 @@
     <ProjectReference Include="..\DepotContainer.API\DepotContainer.API.csproj" />
     <ProjectReference Include="..\DepotContainer.Application\DepotContainer.Application.csproj" />
   </ItemGroup>
-
   <ItemGroup>
     <Using Include="Xunit" />
   </ItemGroup>

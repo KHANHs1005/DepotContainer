@@ -4,6 +4,8 @@ using DepotContainer.Application.Interfaces.Services;
 using Microsoft.AspNetCore.Mvc;
 using Moq;
 using Xunit;
+using System.Collections.Generic;
+using System.Threading.Tasks;
 
 namespace DepotContainer.UnitTests.TestAPI
 {
@@ -18,134 +20,134 @@ namespace DepotContainer.UnitTests.TestAPI
             _controller = new BookingController(_mockService.Object);
         }
 
-        // 1️⃣ Lấy tất cả Booking
-        [Fact]
-        public async Task GetAll_ReturnsOkWithList()
+        // 🧪 Lấy tất cả Booking
+        [Fact(DisplayName = "Lấy tất cả Booking - Trả về danh sách")]
+        public async Task GetAll_TraVeDanhSachBooking()
         {
-            _mockService.Setup(s => s.GetAllAsync()).ReturnsAsync(new List<BookingDto>
-            {
-                new BookingDto { BookingId = 1, BookingNumber = "BK001" }
-            });
+            var bookings = new List<BookingDto> { new BookingDto { BookingId = 1, BookingNumber = "BK001" } };
+            _mockService.Setup(s => s.GetAllAsync()).ReturnsAsync(bookings);
 
-            var result = await _controller.GetAll() as OkObjectResult;
+            var ketQua = await _controller.GetAll();
 
-            Assert.NotNull(result);
-            Assert.Equal(200, result.StatusCode);
-            var list = Assert.IsAssignableFrom<IEnumerable<BookingDto>>(result.Value);
-            Assert.Single(list);
+            var ok = Assert.IsType<OkObjectResult>(ketQua);
+            var duLieu = Assert.IsAssignableFrom<IEnumerable<BookingDto>>(ok.Value);
+            Assert.Single(duLieu);
         }
 
-        // 2️⃣ Lấy tất cả rỗng
-        [Fact]
-        public async Task GetAll_ReturnsOkWithEmptyList()
+        // 🧪 Lấy Booking theo ID
+        [Fact(DisplayName = "Lấy Booking theo ID - Tồn tại")]
+        public async Task GetById_TonTai_TraVeBooking()
         {
-            _mockService.Setup(s => s.GetAllAsync()).ReturnsAsync(new List<BookingDto>());
+            var dto = new BookingDto { BookingId = 1, BookingNumber = "BK001" };
+            _mockService.Setup(s => s.GetByIdAsync(1)).ReturnsAsync(dto);
 
-            var result = await _controller.GetAll() as OkObjectResult;
+            var ketQua = await _controller.GetById(1);
 
-            Assert.NotNull(result);
-            Assert.Equal(200, result.StatusCode);
-            var list = Assert.IsAssignableFrom<IEnumerable<BookingDto>>(result.Value);
-            Assert.Empty(list);
+            var ok = Assert.IsType<OkObjectResult>(ketQua);
+            var duLieu = Assert.IsType<BookingDto>(ok.Value);
+            Assert.Equal("BK001", duLieu.BookingNumber);
         }
 
-        // 3️⃣ Lấy theo ID (có dữ liệu)
-        [Fact]
-        public async Task GetById_Found_ReturnsOk()
+        [Fact(DisplayName = "Lấy Booking theo ID - Không tồn tại")]
+        public async Task GetById_KhongTonTai_TraVeNotFound()
         {
-            var booking = new BookingDto { BookingId = 1, BookingNumber = "BK001" };
-            _mockService.Setup(s => s.GetByIdAsync(1)).ReturnsAsync(booking);
+            _mockService.Setup(s => s.GetByIdAsync(It.IsAny<int>())).ReturnsAsync((BookingDto)null);
 
-            var result = await _controller.GetById(1) as OkObjectResult;
+            var ketQua = await _controller.GetById(99);
 
-            Assert.NotNull(result);
-            Assert.Equal(200, result.StatusCode);
-            var value = Assert.IsType<BookingDto>(result.Value);
-            Assert.Equal("BK001", value.BookingNumber);
+            Assert.IsType<NotFoundResult>(ketQua);
         }
 
-        // 4️⃣ Lấy theo ID (không có dữ liệu)
-        [Fact]
-        public async Task GetById_NotFound_ReturnsNotFound()
+        // 🧪 Lấy chi tiết Booking theo ID
+        [Fact(DisplayName = "Lấy chi tiết Booking theo ID - Tồn tại")]
+        public async Task GetBookingDetails_TonTai_TraVeOk()
         {
-            _mockService.Setup(s => s.GetByIdAsync(1)).ReturnsAsync((BookingDto?)null);
+            var dto = new BookingDetailDto { BookingId = 1 };
+            _mockService.Setup(s => s.GetBookingDetailsAsync(1)).ReturnsAsync(dto);
 
-            var result = await _controller.GetById(1);
+            var ketQua = await _controller.GetBookingDetails(1);
 
-            Assert.IsType<NotFoundResult>(result);
+            var ok = Assert.IsType<OkObjectResult>(ketQua);
+            Assert.IsType<BookingDetailDto>(ok.Value);
         }
 
-        // 5️⃣ Tạo mới booking thành công
-        [Fact]
-        public async Task Create_ReturnsOkWithResult()
+        [Fact(DisplayName = "Lấy chi tiết Booking theo ID - Không tồn tại")]
+        public async Task GetBookingDetails_KhongTonTai_TraVeNotFound()
         {
-            var dto = new CreateBookingDto
-            {
-                BookingNumber = "BK001",
-                ContSize = "20",
-                ContQuantity = 2,
-                OperatorName = "Maersk",
-                ReleaseExpireDate = DateTime.UtcNow,
-                CusId = 1
-            };
+            _mockService.Setup(s => s.GetBookingDetailsAsync(1)).ReturnsAsync((BookingDetailDto)null);
 
-            var expected = new BookingDto
-            {
-                BookingId = 1,
-                BookingNumber = "BK001"
-            };
+            var ketQua = await _controller.GetBookingDetails(1);
 
-            _mockService.Setup(s => s.CreateAsync(dto)).ReturnsAsync(expected);
-
-            var result = await _controller.Create(dto) as OkObjectResult;
-
-            Assert.NotNull(result);
-            Assert.Equal(200, result.StatusCode);
-            var booking = Assert.IsType<BookingDto>(result.Value);
-            Assert.Equal("BK001", booking.BookingNumber);
+            var notFound = Assert.IsType<NotFoundObjectResult>(ketQua);
+            Assert.Contains("không tồn tại", notFound.Value.ToString());
         }
 
-        // 6️⃣ Cập nhật thành công
+        // 🧪 Lấy chi tiết theo BookingNumber
         [Fact]
-        public async Task Update_ReturnsOk()
+        public async Task GetBookingDetailsByNumber_TonTai_TraVeOk()
         {
-            var dto = new UpdateBookingDto
-            {
-                BookingId = 1,
-                ContSize = "40",
-                ContQuantity = 3,
-                OperatorName = "MSC"
-            };
+            var booking = new BookingDetailDto { BookingId = 1, BookingNumber = "BK001" };
 
-            var result = await _controller.Update(dto) as OkObjectResult;
+            _mockService
+                .Setup(s => s.GetBookingDetailsByNumberAsync("BK001"))
+                .ReturnsAsync(booking);
 
-            _mockService.Verify(s => s.UpdateAsync(dto), Times.Once);
-            Assert.NotNull(result);
-            Assert.Equal(200, result.StatusCode);
-            Assert.Equal("Booking updated successfully", result.Value);
+            var result = await _controller.GetBookingDetailsByNumber("BK001");
+
+            var okResult = Assert.IsType<OkObjectResult>(result);
+            var data = Assert.IsType<BookingDetailDto>(okResult.Value);
+            Assert.Equal("BK001", data.BookingNumber);
         }
 
-        // 7️⃣ Xoá thành công
-        [Fact]
-        public async Task Delete_ReturnsOk()
+        [Fact(DisplayName = "Lấy chi tiết theo BookingNumber - Không tồn tại")]
+        public async Task GetBookingDetailsByNumber_KhongTonTai_TraVeNotFound()
         {
-            var result = await _controller.Delete(1) as OkObjectResult;
+            _mockService.Setup(s => s.GetBookingDetailsByNumberAsync("BK001")).ReturnsAsync((BookingDetailDto)null);
 
-            _mockService.Verify(s => s.DeleteAsync(1), Times.Once);
-            Assert.NotNull(result);
-            Assert.Equal(200, result.StatusCode);
-            Assert.Equal("Booking deleted successfully", result.Value);
+            var ketQua = await _controller.GetBookingDetailsByNumber("BK001");
+
+            var notFound = Assert.IsType<NotFoundObjectResult>(ketQua);
+            Assert.Contains("không tồn tại", notFound.Value.ToString());
         }
 
-        // 8️⃣ Xử lý lỗi nội bộ khi tạo
-        [Fact]
-        public async Task Create_ThrowsException_ReturnsServerError()
+        // 🧪 Tạo mới Booking
+        [Fact(DisplayName = "Tạo mới Booking - Thành công")]
+        public async Task Create_ThanhCong_TraVeOk()
         {
-            var dto = new CreateBookingDto { BookingNumber = "BK001" };
-            _mockService.Setup(s => s.CreateAsync(dto)).ThrowsAsync(new Exception("Lỗi hệ thống"));
+            var dto = new CreateBookingDto { BookingNumber = "BK002" };
+            var created = new BookingDto { BookingId = 1, BookingNumber = "BK002" };
+            _mockService.Setup(s => s.CreateAsync(dto)).ReturnsAsync(created);
 
-            // Gọi thử
-            await Assert.ThrowsAsync<Exception>(() => _controller.Create(dto));
+            var ketQua = await _controller.Create(dto);
+
+            var ok = Assert.IsType<OkObjectResult>(ketQua);
+            var duLieu = Assert.IsType<BookingDto>(ok.Value);
+            Assert.Equal("BK002", duLieu.BookingNumber);
+        }
+
+        // 🧪 Cập nhật Booking
+        [Fact(DisplayName = "Cập nhật Booking - Thành công")]
+        public async Task Update_ThanhCong_TraVeOk()
+        {
+            var dto = new UpdateBookingDto { BookingId = 1 };
+            _mockService.Setup(s => s.UpdateAsync(dto)).Returns(Task.CompletedTask);
+
+            var ketQua = await _controller.Update(dto);
+
+            var ok = Assert.IsType<OkObjectResult>(ketQua);
+            Assert.Equal("Booking updated successfully", ok.Value);
+        }
+
+        // 🧪 Xóa Booking
+        [Fact(DisplayName = "Xóa Booking - Thành công")]
+        public async Task Delete_ThanhCong_TraVeOk()
+        {
+            _mockService.Setup(s => s.DeleteAsync(1)).Returns(Task.CompletedTask);
+
+            var ketQua = await _controller.Delete(1);
+
+            var ok = Assert.IsType<OkObjectResult>(ketQua);
+            Assert.Equal("Booking deleted successfully", ok.Value);
         }
     }
 }

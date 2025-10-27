@@ -29,7 +29,7 @@ namespace DepotContainer.Domain.Entities
 
         [ForeignKey("CustomerId")]
         public Customer? Customer { get; set; }
-
+        public virtual ICollection<Container> Container { get; set; }
         public ICollection<EIR>? EIRs { get; set; } = new List<EIR>();
     }
 }

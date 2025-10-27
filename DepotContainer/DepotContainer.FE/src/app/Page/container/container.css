@@ -1,0 +1,275 @@
+app-sidebar {
+  flex: 0 0 250px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100vh;
+  background-color: #1e293b;
+}
+.dashboard-container {
+  width: auto;
+  min-height: auto;
+  background-color: #2d3748;
+}
+
+.dashboard-layout {
+  display: flex;
+  min-height: 100vh;
+}
+
+.main-content {
+  flex: auto;
+  padding: 10px 20px;
+  background-color: #ffffff;
+  overflow-x: hidden;
+  align-items: center;
+  margin-left: 240px; /* bằng đúng width của sidebar */
+  box-sizing: border-box;
+}
+
+header {
+  margin-bottom: 20px;
+  text-align:center;
+}
+
+  header h2 {
+    font-size: 24px;
+    font-weight: 600;
+    color: #2d3748;
+    margin: 0;
+  }
+
+/* Form lọc */
+.filter-section {
+  background-color: #e2e8f0;
+  border-radius: 8px;
+  max-width: 1050px;
+  padding: 20px 30px;
+  margin: 0 auto 20px auto;
+  margin-bottom: 20px;
+}
+
+.filter-row {
+  display: grid;
+  grid-template-columns: repeat(3, 280px);
+  gap: 20px 30px;
+  margin-bottom: 12px;
+  justify-content: center;
+}
+
+  .filter-row:last-of-type {
+    margin-bottom: 15px;
+  }
+
+.filter-group {
+  display: flex;
+  flex-direction: column;
+}
+
+.filter-group-empty {
+  visibility: hidden;
+}
+
+.filter-group label {
+  font-size: 12px;
+  color: #4a5568;
+  margin-bottom: 4px;
+  font-weight: 500;
+}
+
+.filter-input {
+  width: 100%;
+  border: 1px solid #cbd5e0;
+  border-radius: 4px;
+  padding: 6px 10px;
+  font-size: 13px;
+  background-color: white;
+  outline: none;
+}
+
+  .filter-input:focus {
+    border-color: #4299e1;
+  }
+
+.button-group {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin-top: 15px;
+}
+
+.btn {
+  padding: 8px 20px;
+  border: none;
+  border-radius: 4px;
+  font-size: 13px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.2s;
+  color: white;
+}
+
+.btn-primary {
+  background-color: #4299e1;
+}
+
+  .btn-primary:hover {
+    background-color: #3182ce;
+  }
+
+.btn-warning {
+  background-color: #ed8936;
+}
+
+  .btn-warning:hover {
+    background-color: #dd6b20;
+  }
+
+.btn-secondary {
+  background-color: #718096;
+}
+
+  .btn-secondary:hover {
+    background-color: #4a5568;
+  }
+
+/* Bảng dữ liệu */
+.table-wrapper {
+  background-color: white;
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.container-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 13px;
+  min-width: 1000px;
+}
+
+  .container-table thead {
+    background-color: #edf2f7;
+  }
+
+  .container-table th {
+    padding: 10px 12px;
+    text-align: left;
+    font-weight: 600;
+    font-size: 12px;
+    color: #2d3748;
+    text-transform: uppercase;
+    border-bottom: 1px solid #e2e8f0;
+  }
+
+  .container-table tbody tr {
+    border-bottom: 1px solid #e2e8f0;
+  }
+
+    .container-table tbody tr:hover {
+      background-color: #f7fafc;
+    }
+
+  .container-table td {
+    padding: 10px 12px;
+    color: #2d3748;
+  }
+
+/* Trạng thái */
+.status {
+  font-weight: 500;
+}
+
+.status-good {
+  color: #38a169;
+}
+
+.status-pending {
+  color: #ed8936;
+}
+
+.status-damaged {
+  color: #e53e3e;
+}
+
+/* Nút hành động */
+.actions {
+  display: flex;
+  gap: 6px;
+}
+
+.btn-icon {
+  background: none;
+  border: none;
+  cursor: pointer;
+  font-size: 16px;
+  padding: 4px;
+  transition: transform 0.2s;
+}
+
+  .btn-icon:hover {
+    transform: scale(1.15);
+  }
+
+/* Pagination */
+.pagination {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+  padding: 15px;
+  background-color: white;
+}
+
+.page-btn {
+  width: 32px;
+  height: 32px;
+  border: 1px solid #e2e8f0;
+  background-color: white;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 13px;
+  transition: all 0.2s;
+}
+
+  .page-btn:hover {
+    background-color: #edf2f7;
+    border-color: #cbd5e0;
+  }
+
+  .page-btn.active {
+    background-color: #4299e1;
+    color: white;
+    border-color: #4299e1;
+  }
+
+.pagination span {
+  color: #718096;
+  padding: 0 5px;
+}
+
+/* Responsive */
+@media (max-width: 1200px) {
+  .filter-row {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 768px) {
+  .main-content {
+    padding: 15px;
+  }
+
+  .filter-row {
+    grid-template-columns: 1fr;
+  }
+
+  .button-group {
+    flex-direction: column;
+  }
+
+  .btn {
+    width: 100%;
+  }
+}
+
+

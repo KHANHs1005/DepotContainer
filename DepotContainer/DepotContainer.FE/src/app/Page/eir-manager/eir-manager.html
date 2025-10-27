@@ -1,0 +1,139 @@
+<div class="dashboard-container">
+  <div class="dashboard-layout">
+    <app-sidebar></app-sidebar>
+    <div class="eir-container">
+      <h2 class="title">QUẢN LÝ CHỨNG TỪ</h2>
+
+      <div class="tabs">
+        <button [class.active]="activeTab === 'eir'" (click)="activeTab = 'eir'">EIR</button>
+      </div>
+
+      <!-- Form nhập EIR -->
+      <div class="eir-form card p-3">
+        <form>
+          <!-- 1. Thông tin chung -->
+          <fieldset class="mb-3 border rounded p-3">
+            <legend class="float-none w-auto px-2">1. Thông tin chung</legend>
+
+            <div class="row mb-2">
+              <div class="col-md-3">
+                <label class="form-label">Ngày lập phiếu <span class="text-danger">*</span></label>
+                <input type="date" class="form-control" />
+              </div>
+              <div class="col-md-3">
+                <label class="form-label">Loại phiếu <span class="text-danger">*</span></label>
+                <select class="form-select">
+                  <option>Hạ rỗng</option>
+                  <option>Nâng rỗng</option>
+                </select>
+              </div>
+              <div class="col-md-3">
+                <label class="form-label">Depot phát hành</label>
+                <input type="text" class="form-control" />
+              </div>
+              <div class="col-md-3">
+                <label class="form-label">Tình trạng <span class="text-danger">*</span></label>
+                <select class="form-select">
+                  <option>Tốt</option>
+                  <option>Hư hỏng</option>
+                </select>
+              </div>
+            </div>
+          </fieldset>
+
+          <!-- 2. Thông tin Container -->
+          <fieldset class="mb-3 border rounded p-3">
+            <legend class="float-none w-auto px-2">2. Thông tin Container</legend>
+
+            <div class="row mb-2">
+              <div class="col-md-3">
+                <label class="form-label">Mã số container</label>
+                <input type="text" class="form-control" />
+              </div>
+              <div class="col-md-2">
+                <label class="form-label">Kích cỡ / Loại</label>
+                <select class="form-select">
+                  <option>20GP</option>
+                  <option>40HC</option>
+                </select>
+              </div>
+              <div class="col-md-2">
+                <label class="form-label">Số Seal</label>
+                <input type="text" class="form-control" />
+              </div>
+              <div class="col-md-2">
+                <label class="form-label">Trọng lượng vỏ (Kg)</label>
+                <input type="number" class="form-control" />
+              </div>
+              <div class="col-md-3">
+                <label class="form-label">Vị trí</label>
+                <input type="text" class="form-control" />
+              </div>
+            </div>
+          </fieldset>
+
+          <!-- 3. Thông tin giao nhận -->
+          <fieldset class="mb-3 border rounded p-3">
+            <legend class="float-none w-auto px-2">3. Thông tin giao nhận</legend>
+
+            <div class="row mb-2">
+              <div class="col-md-3">
+                <label class="form-label">Hãng tàu <span class="text-danger">*</span></label>
+                <input type="text" class="form-control" />
+              </div>
+              <div class="col-md-3">
+                <label class="form-label">Số Booking/bill <span class="text-danger">*</span></label>
+                <input type="text" class="form-control" />
+              </div>
+              <div class="col-md-3">
+                <label class="form-label">Khách hàng</label>
+                <input type="text" class="form-control" />
+              </div>
+              <div class="col-md-3">
+                <label class="form-label">Địa điểm giao nhận <span class="text-danger">*</span></label>
+                <input type="text" class="form-control" />
+              </div>
+            </div>
+          </fieldset>
+
+          <!-- Buttons -->
+          <div class="text-end mt-3">
+            <button type="button" class="btn btn-warning me-2">Báo cáo thống kê</button>
+            <button type="submit" class="btn btn-primary">Tạo EIR</button>
+          </div>
+        </form>
+      </div>
+
+
+      <!-- Danh sách EIR -->
+      <div class="table-section">
+        <table>
+          <thead>
+            <tr>
+              <th>Số EIR</th>
+              <th>Mã Container</th>
+              <th>Hãng tàu</th>
+              <th>Loại phiếu</th>
+              <th>Ngày lập</th>
+              <th>Tình trạng</th>
+              <th></th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr *ngFor="let item of eirList">
+              <td>{{ item.eirNo }}</td>
+              <td>{{ item.containerNumber }}</td>
+              <td>{{ item.operator }}</td>
+              <td>{{ item.type }}</td>
+              <td>{{ item.dateCreated | date:'dd/MM/yyyy HH:mm' }}</td>
+              <td>{{ item.status }}</td>
+              <td>
+                <button (click)="viewEir(item)">👁</button>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </div>
+</div>

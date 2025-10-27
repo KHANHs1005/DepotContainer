@@ -16,6 +16,101 @@
     "ReturnTypes": []
   },
   {
+    "ContainingType": "DepotContainer.API.Controllers.BlockController",
+    "Method": "GetAll",
+    "RelativePath": "api/Block",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "DepotContainer.API.Controllers.BlockController",
+    "Method": "Create",
+    "RelativePath": "api/Block",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "dto",
+        "Type": "DepotContainer.Application.DTOs.CreateBlockDto",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "DepotContainer.API.Controllers.BlockController",
+    "Method": "GetSlotsByBlockId",
+    "RelativePath": "api/Block/{blockId}/slots",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "blockId",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "DepotContainer.API.Controllers.BlockController",
+    "Method": "GetById",
+    "RelativePath": "api/Block/{id}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "DepotContainer.API.Controllers.BlockController",
+    "Method": "Update",
+    "RelativePath": "api/Block/{id}",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      },
+      {
+        "Name": "dto",
+        "Type": "DepotContainer.Application.DTOs.UpdateBlockDto",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "DepotContainer.API.Controllers.BlockController",
+    "Method": "Delete",
+    "RelativePath": "api/Block/{id}",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
     "ContainingType": "DepotContainer.API.Controllers.BookingController",
     "Method": "GetAll",
     "RelativePath": "api/Booking",
@@ -84,6 +179,38 @@
       {
         "Name": "id",
         "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "DepotContainer.API.Controllers.BookingController",
+    "Method": "GetBookingDetails",
+    "RelativePath": "api/Booking/{id}/details",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "DepotContainer.API.Controllers.BookingController",
+    "Method": "GetBookingDetailsByNumber",
+    "RelativePath": "api/Booking/by-number/{bookingNumber}/details",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "bookingNumber",
+        "Type": "System.String",
         "IsRequired": true
       }
     ],
@@ -312,6 +439,32 @@
     "ReturnTypes": []
   },
   {
+    "ContainingType": "DepotContainer.API.Controllers.SlotsController",
+    "Method": "Create",
+    "RelativePath": "api/Slots",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "dto",
+        "Type": "DepotContainer.Application.DTOs.CreateSlotDto",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "DepotContainer.API.Controllers.SlotsController",
+    "Method": "GetAll",
+    "RelativePath": "api/Slots",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
     "ContainingType": "DepotContainer.API.Controllers.StaffController",
     "Method": "GetAll",
     "RelativePath": "api/Staff",
@@ -388,6 +541,16 @@
         "IsRequired": true
       }
     ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "DepotContainer.API.Controllers.StatisticsController",
+    "Method": "GetStatistics",
+    "RelativePath": "api/Statistics",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
     "ReturnTypes": []
   }
 ]

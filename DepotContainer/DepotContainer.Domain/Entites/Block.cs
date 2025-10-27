@@ -35,12 +35,6 @@ namespace DepotContainer.Domain.Entities
         [MaxLength(200)]
         public string? Description { get; set; }
 
-        [Column("depot_id")]
-        public int DepotId { get; set; }
-
-        [ForeignKey("DepotId")]
-        public Depot? Depot { get; set; }
-
-        public ICollection<Slot>? Slots { get; set; }
+        public ICollection<Slot>? Slots { get; set; } = new List<Slot>();
     }
 }

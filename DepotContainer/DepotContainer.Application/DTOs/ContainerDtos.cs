@@ -23,7 +23,7 @@ namespace DepotContainer.Application.DTOs
 
         public string? Size { get; set; }
 
-        public string? Type { get; set; }
+        public string? ContainerType { get; set; }
 
         public string? CurrentBlock { get; set; }
 
@@ -38,6 +38,8 @@ namespace DepotContainer.Application.DTOs
         public DateTime? TimeIn { get; set; }
 
         public DateTime? TimeOut { get; set; }
+        public int? BookingId { get; set; }
+        public string? BookingNumber { get; set; }
     }
 
     public class CreateContainerDto
@@ -49,7 +51,7 @@ namespace DepotContainer.Application.DTOs
 
         public string? Size { get; set; }
 
-        public string? Type { get; set; }
+        public string? ContainerType { get; set; }
 
         public DateTime? DateOfManufacture { get; set; }
 
@@ -72,6 +74,8 @@ namespace DepotContainer.Application.DTOs
         public int? Tier { get; set; }
 
         public DateTime? TimeIn { get; set; }
+        public int? BookingId { get; set; }
+        public string? BookingNumber { get; set; }
     }
 
     public class UpdateContainerDto
@@ -96,7 +100,7 @@ namespace DepotContainer.Application.DTOs
 
         public string? Size { get; set; }
 
-        public string? Type { get; set; }
+        public string ContainerType { get; set; } = string.Empty;
 
         public string? CurrentBlock { get; set; }
 

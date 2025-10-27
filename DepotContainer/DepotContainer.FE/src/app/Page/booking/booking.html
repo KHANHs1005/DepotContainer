@@ -1,0 +1,72 @@
+<div class="dashboard-layout">
+  <!-- Sidebar -->
+  <app-sidebar></app-sidebar>
+
+  <!-- Nội dung chính -->
+  <main class="main-content">
+    <header class="page-header">
+      <h1>DANH SÁCH BOOKING</h1>
+    </header>
+
+    <!-- Bảng danh sách booking -->
+    <table class="booking-table">
+      <thead>
+        <tr>
+          <th>Số Booking</th>
+          <th>Hãng tàu</th>
+          <th>Ngày giờ Booking</th>
+          <th>Khách hàng</th>
+          <th>Số lượng</th>
+          <th>Trạng thái</th>
+          <th>Chi tiết</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr *ngFor="let booking of bookings">
+          <td>{{ booking.bookingNumber }}</td>
+          <td>{{ booking.operatorName }}</td>
+          <td>{{ booking.createdAt | date: 'yyyy-MM-dd HH:mm' }}</td>
+          <td>{{ booking.customerName }}</td>
+          <td>{{ booking.contQuantity }}</td>
+          <td>Hoàn thành</td>
+          <td>
+            <button class="btn btn-primary btn-sm" (click)="openDetail(booking)">
+              Chi tiết
+            </button>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+
+    <!-- Nút thêm booking -->
+  </main>
+</div>
+<!-- Modal Chi tiết Booking -->
+<div class="modal" *ngIf="showDetail" (click)="closeDetail()">
+  <div class="modal-content" (click)="$event.stopPropagation()">
+    <div class="modal-header">
+      <h2>Số Booking: {{ selectedBooking?.bookingNumber }}</h2>
+      <button class="btn-close" (click)="closeDetail()">×</button>
+    </div>
+    <table class="modal-table">
+      <thead>
+        <tr>
+          <th>Mã container</th>
+          <th>Loại container</th>
+          <th>Hãng tàu</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr *ngFor="let c of selectedBooking?.containers">
+          <td>{{ c.containerName }}</td>
+          <td>{{ c.containerType }}</td>
+          <td>{{ c.operatorName }}</td>
+        </tr>
+      </tbody>
+    </table>
+    <div class="modal-actions">
+      <button class="btn-create-eir" (click)="createEIR()">Tạo EIR</button>
+    </div>
+  </div>
+</div>
+

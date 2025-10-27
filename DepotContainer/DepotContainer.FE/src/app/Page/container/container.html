@@ -1,0 +1,126 @@
+<div class="dashboard-container">
+  <div class="dashboard-layout">
+    <app-sidebar></app-sidebar>
+    <main class="main-content">
+      <header>
+        <h2>Quản lý container</h2>
+      </header>
+
+      <!-- Form lọc container -->
+      <div class="filter-section">
+        <div class="filter-row">
+          <div class="filter-group">
+            <label>Mã số container</label>
+            <input class="filter-input" type="text" />
+          </div>
+          <div class="filter-group">
+            <label>Tình trạng</label>
+            <input class="filter-input" type="text" />  
+          </div>
+          <div class="filter-group">
+            <label>Block</label>
+            <input class="filter-input" type="text" />
+          </div>
+        </div>
+
+        <div class="filter-row">
+          <div class="filter-group">
+            <label>Hãng tàu</label>
+            <input class="filter-input" type="text" />
+          </div>
+          <div class="filter-group">
+            <label>Container tồn</label>
+            <input class="filter-input" type="text" />
+          </div>
+          <div class="filter-group">
+            <label>Vị trí</label>
+            <input class="filter-input" type="text" />
+          </div>
+        </div>
+
+        <div class="filter-row">
+          <div class="filter-group">
+            <label>EIR</label>
+            <input class="filter-input" type="text" />
+          </div>
+          <div class="filter-group">
+            <label>Dịch vụ</label>
+            <input class="filter-input" type="text" />
+          </div>
+          <div class="filter-group">
+            <label>Ngày giao container</label>
+            <input class="filter-input" type="text" />
+          </div>
+        </div>
+
+        <div class="filter-row">
+          <div class="filter-group">
+            <label>Kích cỡ</label>
+            <input class="filter-input" type="text" />
+          </div>
+          <div class="filter-group-empty"></div>
+          <div class="filter-group">
+            <label>Ngày nhận container</label>
+            <input class="filter-input" type="text" />
+          </div>
+        </div>
+
+        <div class="button-group">
+          <button class="btn btn-primary" (click)="onAddNew()">Thêm mới</button>
+          <button class="btn btn-warning" (click)="onExport()">Xuất dữ liệu</button>
+          <button class="btn btn-secondary" (click)="onSearch()">Tìm Kiếm</button>
+        </div>
+      </div>
+
+      <!-- Bảng danh sách container -->
+      <div class="table-wrapper">
+        <table class="container-table">
+          <thead>
+            <tr>
+              <th>stt</th>
+              <th>Mã số container</th>
+              <th>Hãng tàu</th>
+              <th>Dịch vụ</th>
+              <th>Block</th>
+              <th>Vị trí</th>
+              <th>Tình trạng</th>
+              <th>Thời gian tồn</th>
+              <th>Hành động</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr *ngFor="let c of containers; index as i">
+              <td>{{ i + 1 }}</td>
+              <td>{{ c.containerNumber }}</td>
+              <td>{{ c.operatorName }}</td>
+              <td>{{ c.type }}</td>
+              <td>{{ c.currentBlock }}</td>
+              <td>{{ c.size }}</td>
+              <td class="status"
+                  [ngClass]="{
+                    'status-good': c.contCondition === 'Good',
+                    'status-pending': c.contCondition === 'Pending',
+                    'status-damaged': c.contCondition === 'Damaged'
+                  }">
+                {{ c.contCondition }}
+              </td>
+              <td>2 ngày</td>
+              <td class="actions">
+                <button class="btn-icon">📋</button>
+                <button class="btn-icon">✏️</button>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+
+        <!-- Pagination -->
+        <div class="pagination">
+          <button class="page-btn">1</button>
+          <button class="page-btn">2</button>
+          <button class="page-btn">3</button>
+          <span>...</span>
+        </div>
+      </div>
+    </main>
+  </div>
+</div>

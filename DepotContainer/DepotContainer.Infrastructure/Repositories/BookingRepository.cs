@@ -2,6 +2,7 @@
 using DepotContainer.Domain.Entities;
 using DepotContainer.Infrastructure.Data;
 using Microsoft.EntityFrameworkCore;
+using System;
 
 namespace DepotContainer.Infrastructure.Repositories
 {
@@ -16,21 +17,17 @@ namespace DepotContainer.Infrastructure.Repositories
 
         public async Task<IEnumerable<Booking>> GetAllAsync()
         {
-            return await _context.Bookings
-                .Include(b => b.Customer)
-                .ToListAsync();
+            return await _context.Bookings.ToListAsync();
         }
 
         public async Task<Booking?> GetByIdAsync(int id)
         {
-            return await _context.Bookings
-                .Include(b => b.Customer)
-                .FirstOrDefaultAsync(b => b.BookingId == id);
+            return await _context.Bookings.FindAsync(id);
         }
 
         public async Task AddAsync(Booking booking)
         {
-            _context.Bookings.Add(booking);
+            await _context.Bookings.AddAsync(booking);
             await _context.SaveChangesAsync();
         }
 
@@ -44,6 +41,26 @@ namespace DepotContainer.Infrastructure.Repositories
         {
             _context.Bookings.Remove(booking);
             await _context.SaveChangesAsync();
+        }
+
+        // ✅ SỬA: Include đúng navigation property name
+        public async Task<Booking?> GetBookingWithDetailsAsync(int id)
+        {
+            return await _context.Bookings
+                .Include(b => b.Container)
+                    .ThenInclude(c => c.ContIso) // ✅ Sửa: ContainerISO -> ContIso
+                .Include(b => b.Customer)
+                .FirstOrDefaultAsync(b => b.BookingId == id);
+        }
+
+        // ✅ SỬA: Include đúng navigation property name
+        public async Task<Booking?> GetBookingWithDetailsByNumberAsync(string bookingNumber)
+        {
+            return await _context.Bookings
+                .Include(b => b.Container)
+                    .ThenInclude(c => c.ContIso) // ✅ Sửa: ContainerISO -> ContIso
+                .Include(b => b.Customer)
+                .FirstOrDefaultAsync(b => b.BookingNumber == bookingNumber);
         }
     }
 }

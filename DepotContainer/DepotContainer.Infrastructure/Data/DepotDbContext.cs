@@ -43,7 +43,14 @@ namespace DepotContainer.Infrastructure.Data
                 entity.Property(e => e.StaffName).IsRequired().HasMaxLength(100);
                 entity.Property(e => e.ContactPhone).HasMaxLength(20);
             });
+            modelBuilder.Entity<Slot>()
+                .HasOne(s => s.Container)
+                .WithOne(c => c.Slot)
+                .HasForeignKey<Container>(c => c.SlotId)
+                .OnDelete(DeleteBehavior.SetNull);
+            modelBuilder.Entity<Container>()
+                .Property(c => c.ContainerType)
+                .HasConversion<string>();
         }
-
     }
 }
