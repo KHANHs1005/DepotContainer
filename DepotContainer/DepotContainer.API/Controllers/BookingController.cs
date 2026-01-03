@@ -21,11 +21,30 @@ namespace DepotContainer.API.Controllers
             var bookings = await _bookingService.GetAllAsync();
             return Ok(bookings);
         }
+        [HttpGet("{id}/details")]
+        public async Task<IActionResult> GetBookingDetails(int id)
+        {
+            var bookingDetails = await _bookingService.GetBookingDetailsAsync(id);
 
+            if (bookingDetails == null)
+                return NotFound(new { message = "Booking không tồn tại" });
+
+            return Ok(bookingDetails);
+        }
+        [HttpGet("by-number/{bookingNumber}/details")]
+        public async Task<IActionResult> GetBookingDetailsByNumber(string bookingNumber)
+        {
+            var bookingDetails = await _bookingService.GetBookingDetailsByNumberAsync(bookingNumber);
+
+            if (bookingDetails == null)
+                return NotFound(new { message = $"Booking {bookingNumber} không tồn tại" });
+
+            return Ok(bookingDetails);
+        }
         [HttpGet("{id}")]
         public async Task<IActionResult> GetById(int id)
         {
-            var booking = await _bookingService.GetByIdAsync(id);
+            var booking = await _bookingService.GetByIdAsync(id);   
             if (booking == null) return NotFound();
             return Ok(booking);
         }

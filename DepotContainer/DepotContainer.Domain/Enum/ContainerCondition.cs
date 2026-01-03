@@ -1,4 +1,4 @@
-﻿namespace DepotContainer.Domain.Enums
+﻿    namespace DepotContainer.Domain.Enums
 {
     public enum ContainerCondition
     {

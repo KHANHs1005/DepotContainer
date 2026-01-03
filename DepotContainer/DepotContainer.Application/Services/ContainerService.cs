@@ -2,6 +2,7 @@
 using DepotContainer.Application.Interfaces.Repositories;
 using DepotContainer.Application.Interfaces.Services;
 using DepotContainer.Domain.Entities;
+using DepotContainer.Domain.Enums;
 using System.Text.RegularExpressions;
 
 namespace DepotContainer.Application.Services
@@ -39,7 +40,9 @@ namespace DepotContainer.Application.Services
                 Row = c.Slot?.Row,
                 Tier = c.Slot?.Tier,
                 Size = c.ContIso?.Length?.ToString() ?? string.Empty,
-                Type = c.ContIso?.Description ?? string.Empty
+                ContainerType = c.ContIso?.Description ?? string.Empty,
+                BookingId = c.BookingId,
+                BookingNumber = c.Booking?.BookingNumber
             });
         }
 
@@ -62,7 +65,9 @@ namespace DepotContainer.Application.Services
                 Row = c.Slot?.Row,
                 Tier = c.Slot?.Tier,
                 Size = c.ContIso?.Length?.ToString() ?? string.Empty,
-                Type = c.ContIso?.Description ?? string.Empty
+                ContainerType = c.ContIso?.Description ?? string.Empty,
+                BookingId = c.BookingId,
+                BookingNumber = c.Booking?.BookingNumber
             };
         }
 
@@ -83,9 +88,9 @@ namespace DepotContainer.Application.Services
             if (block == null)
                 block = await _blockRepository.GetByNameAsync(dto.CurrentBlock!);
 
-            // Test mong lỗi: "Block 'B9' không tồn tại"
+            // Test mong lỗi: "Block 'B9' không tồn tại"    
             if (block == null)
-                throw new Exception($"Block '{dto.CurrentBlock}9' không tồn tại");
+                throw new Exception($"Block '{dto.CurrentBlock}' không tồn tại");
 
             // 3️⃣ Slot lookup
             var slot = await _slotRepository.GetSlotAsync(block.BlockId, dto.Bay.Value, dto.Row.Value, dto.Tier.Value);
@@ -119,6 +124,7 @@ namespace DepotContainer.Application.Services
             {
                 ContainerNo = dto.ContainerNumber,
                 OperatorName = dto.OperatorName,
+                ContainerType = string.IsNullOrWhiteSpace(dto.ContainerType)? null: Enum.Parse<ContainerType>(dto.ContainerType),
                 ContStatus = dto.ContStatus ?? "Full",
                 ContCondition = dto.ContCondition ?? "Good",
                 SlotId = slot.SlotId,
@@ -134,16 +140,17 @@ namespace DepotContainer.Application.Services
                 OperatorName = container.OperatorName,
                 ContainerNumber = container.ContainerNo,
                 ContStatus = container.ContStatus,
+                ContainerType=dto.ContainerType,
                 ContCondition = container.ContCondition,
                 SlotId = slot.SlotId,
                 CurrentBlock = block.BlockName,
                 Bay = slot.Bay,
                 Row = slot.Row,
-                Tier = slot.Tier
+                Tier = slot.Tier,
+                BookingId = container.BookingId,
+                BookingNumber = container.Booking?.BookingNumber
             };
         }
-
-        // UPDATE CONTAINER — chỉnh khớp test
         public async Task UpdateAsync(UpdateContainerDto dto)
         {
             var container = await _containerRepository.GetByIdAsync(dto.ContainerId);
@@ -198,14 +205,6 @@ namespace DepotContainer.Application.Services
                 throw new Exception("Container không tồn tại");
 
             await _containerRepository.DeleteAsync(container.ContainerId);
-        }
-
-        // Hàm kiểm tra định dạng ISO 6346
-        private bool IsValidContainerNumber(string number)
-        {
-            if (string.IsNullOrEmpty(number)) return false;
-            var pattern = @"^[A-Z]{4}[UJZ][0-9]{7}$";
-            return Regex.IsMatch(number, pattern);
         }
     }
 }

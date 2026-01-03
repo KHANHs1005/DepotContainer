@@ -1,0 +1,32 @@
+<aside class="sidebar">
+  <div class="user-info">
+    <div class="user-icon">👤</div>
+    <div class="user-name">{{ staffName }}</div>
+    <hr class="divider" />
+  </div>
+
+  <nav class="menu">
+    <a routerLink="/dashboard" routerLinkActive="active" class="menu-item">
+      <span class="icon">📊</span> Dashboard
+    </a>
+    <a routerLink="/block-management" routerLinkActive="active" class="menu-item">
+      <span class="icon">🏗️</span> Depot
+    </a>
+    <a routerLink="/eir-manager" routerLinkActive="active" class="menu-item">
+      <span class="icon">📄</span> Chứng từ
+    </a>
+    <a routerLink="/booking" routerLinkActive="active" class="menu-item">
+      <span class="icon">📄</span> Booking
+    </a>
+    <a routerLink="/container" routerLinkActive="active" class="menu-item">
+      <span class="icon">🏗️</span> Container
+    </a>
+    <a routerLink="setting" routerLinkActive="active" class="menu-item">
+      <span class="icon">⚙️</span> Cài đặt
+    </a>
+  </nav>
+
+  <button class="logout-btn" (click)="logout()">
+    🚪 Đăng xuất
+  </button>
+</aside>

@@ -16,17 +16,28 @@ namespace DepotContainer.Infrastructure.Repositories
 
         public async Task<IEnumerable<Staff>> GetAllAsync()
         {
-            return await _context.Staffs.ToListAsync();
+            return await _context.Staffs
+                .AsNoTracking()
+                .ToListAsync();
         }
 
         public async Task<Staff?> GetByIdAsync(int id)
         {
-            return await _context.Staffs.FindAsync(id);
+            return await _context.Staffs
+                .AsNoTracking()
+                .FirstOrDefaultAsync(s => s.StaffId == id);
+        }
+
+        // 👇 thêm phương thức này để hỗ trợ login sau này
+        public async Task<Staff?> GetByUsernameAsync(string username)
+        {
+            return await _context.Staffs
+                .FirstOrDefaultAsync(s => s.Username == username);
         }
 
         public async Task AddAsync(Staff staff)
         {
-            _context.Staffs.Add(staff);
+            await _context.Staffs.AddAsync(staff);
             await _context.SaveChangesAsync();
         }
 

@@ -1,0 +1,52 @@
+<div class="dashboard-container">
+  <div class="dashboard-layout">
+    <app-sidebar></app-sidebar>
+    <main class="main-content">
+      <header>  
+        <h2>TRANG CHỦ</h2>
+      </header>
+      <div class="stats-grid">
+        <div class="stat-card">
+          <h3>Container Rỗng</h3>
+          <div class="stat-value">{{ stats.emptyContainer }}</div>
+        </div>
+
+        <div class="stat-card">
+          <h3>Booking</h3>
+          <div class="stat-value">{{ stats.booking }}</div>
+        </div>
+
+        <div class="stat-card">
+          <h3>Phiếu EIR</h3>
+          <div class="stat-value">{{ stats.eir }}</div>
+        </div>
+
+        <div class="stat-card">
+          <h3>Vị Trí Trống</h3>
+          <div class="stat-value">{{ stats.slot }}</div>
+        </div>
+      </div>
+        <h3>Thống kê sản lượng xuất/nhập theo hãng</h3>
+        <table class="shipping-table">
+          <thead>
+            <tr>
+              <th>Hãng tàu</th>
+              <th>Nhập (cont)</th>
+              <th>Xuất (cont)</th>
+              <th>Tồn (0-10 ngày)</th>
+              <th>Tồn (≥10 ngày)</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr *ngFor="let ship of operatorName">
+              <td>{{ ship.name }}</td>
+              <td>{{ ship.import }}</td>
+              <td>{{ ship.export }}</td>
+              <td>{{ ship.stock0to10 }}</td>
+              <td>{{ ship.stock10plus }}</td>
+            </tr>
+          </tbody>
+        </table>
+    </main> 
+  </div>
+</div>

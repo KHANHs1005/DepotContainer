@@ -6,6 +6,7 @@ namespace DepotContainer.Application.Interfaces.Repositories
     {
         Task<IEnumerable<Staff>> GetAllAsync();
         Task<Staff?> GetByIdAsync(int id);
+        Task<Staff?> GetByUsernameAsync(string username);
         Task AddAsync(Staff staff);
         Task UpdateAsync(Staff staff);
         Task DeleteAsync(Staff staff);

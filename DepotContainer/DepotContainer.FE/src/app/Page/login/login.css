@@ -1,0 +1,139 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.login-container {
+  min-height: 100vh;
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: inherit;
+}
+
+.login-card {
+  background-color:whitesmoke;
+  border-radius: 0;
+  overflow: hidden;
+  display: flex;
+  width: 90%;
+  max-width: 1200px;
+  min-height: 550px;
+  box-shadow: 0 20px 60px rgba(0, 0, 0, 0.5);
+}
+
+/* FORM BÊN TRÁI */
+.login-form {
+  flex: 0 0 40%;
+  padding: 80px 60px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background: white;
+}
+
+  .login-form h1 {
+    font-size: 32px;
+    font-weight: bold;
+    margin-bottom: 50px;
+    color: #000;
+    letter-spacing: 1px;
+  }
+
+.form-group {
+  margin-bottom: 25px;
+}
+
+  .form-group label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: 400;
+    color: #333;
+    font-size: 14px;
+  }
+
+  .form-group input {
+    width: 100%;
+    padding: 12px 20px;
+    border: 2px solid #000;
+    border-radius: 25px;
+    font-size: 15px;
+    transition: all 0.3s;
+    outline: none;
+    background: white;
+  }
+
+    .form-group input:focus {
+      border-color: #000;
+      box-shadow: 0 0 0 1px #000;
+    }
+
+.btn-login {
+  width: 100%;
+  padding: 14px;
+  background: #000;
+  color: white;
+  border: 2px solid #000;
+  border-radius: 25px;
+  font-size: 15px;
+  font-weight: 500;
+  cursor: pointer;
+  margin-top: 20px;
+  transition: all 0.3s;
+}
+
+  .btn-login:hover {
+    background: #333;
+    border-color: #333;
+  }
+
+  .btn-login:active {
+    transform: scale(0.98);
+  }
+
+.error-message {
+  color: #e74c3c;
+  margin-top: 10px;
+  font-size: 13px;
+  text-align: center;
+}
+
+/* HÌNH CONTAINER BÊN PHẢI */
+.container-image {
+  flex: 0 0 60%;
+  background: linear-gradient(135deg, #8B9DC3 0%, #D4D9E5 100%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding:inherit;
+  position: relative;
+  overflow: hidden;
+}
+
+  .container-image img {
+    max-width: auto;
+    max-height: auto;
+    object-fit: contain;
+    filter: drop-shadow(0 10px 30px rgba(0, 0, 0, 0.3));
+  }
+  
+
+/* Responsive */
+@media (max-width: 968px) {
+  .login-card {
+    flex-direction: column;
+    width: 95%;
+  }
+
+  .login-form {
+    flex: 1;
+    padding: 50px 40px;
+  }
+
+  .container-image {
+    flex: 1;
+    min-height: 300px;
+  }
+}

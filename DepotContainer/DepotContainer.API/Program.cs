@@ -14,28 +14,31 @@ builder.Services.AddCors(options =>
     options.AddPolicy("AllowAngularApp",
         policy =>
         {
-            policy.WithOrigins("http://localhost:4200")
-                  .AllowAnyHeader()
-                  .AllowAnyMethod();
+            policy.WithOrigins("http://localhost:52259") .AllowAnyHeader() .AllowAnyMethod();
         });
 });
 
-// 👇 Thêm cấu hình này để API hiểu Enum dạng chuỗi (GateIn, GateOut)
+// Thêm cấu hình này để API hiểu Enum dạng chuỗi (GateIn, GateOut)
 builder.Services.AddControllers()
     .AddJsonOptions(options =>
     {
         options.JsonSerializerOptions.Converters.Add(new JsonStringEnumConverter());
     });
-
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 
-builder.Services.AddDbContext<DepotDbContext>(options =>
-    options.UseSqlServer(builder.Configuration.GetConnectionString("DefaultConnection")));
+builder.Services.AddDbContext<DepotDbContext>(options =>options.UseSqlServer(builder.Configuration.GetConnectionString("DefaultConnection")));
+//Statistics
 
+builder.Services.AddScoped<IStatisticsService, StatisticsService>();
 // Staff
 builder.Services.AddScoped<IStaffRepository, StaffRepository>();
 builder.Services.AddScoped<IStaffService, StaffService>();
+//slot, block
+builder.Services.AddScoped<IBlockRepository, BlockRepository>();
+builder.Services.AddScoped<ISlotRepository, SlotRepository>();
+builder.Services.AddScoped<IBlockService, BlockService>();   //
+builder.Services.AddScoped<ISlotService, SlotService>();
 
 // 📦 Container
 builder.Services.AddScoped<IContainerRepository, ContainerRepository>();
@@ -55,9 +58,6 @@ builder.Services.AddScoped<ICustomerService, CustomerService>();
 builder.Services.AddScoped<IEirRepository, EirRepository>();
 builder.Services.AddScoped<IEirService, EirService>();
 
-// -------------------------------
-// Build app
-// -------------------------------
 var app = builder.Build();
 
 if (app.Environment.IsDevelopment())
@@ -65,10 +65,7 @@ if (app.Environment.IsDevelopment())
     app.UseSwagger();
     app.UseSwaggerUI();
 }
-
-// ✅ Bật CORS
 app.UseCors("AllowAngularApp");
-
 app.UseHttpsRedirection();
 app.UseAuthorization();
 app.MapControllers();

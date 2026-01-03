@@ -1,4 +1,5 @@
-﻿using System.ComponentModel.DataAnnotations;
+﻿using DepotContainer.Domain.Enums;
+using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
 
 namespace DepotContainer.Domain.Entities
@@ -23,13 +24,15 @@ namespace DepotContainer.Domain.Entities
         [MaxLength(100)]
         public string? OperatorName { get; set; }
 
+        [Column("container_type")]
+        public ContainerType? ContainerType { get; set; }
+
         [Column("is_empty")]
         public bool IsEmpty { get; set; }
 
         [Column("weight")]
         public double? Weight { get; set; }
 
-          // cont_status IN ('Empty','Full') => lưu string
         [Column("cont_status")]
         [MaxLength(20)]
         public string? ContStatus { get; set; }
@@ -40,7 +43,6 @@ namespace DepotContainer.Domain.Entities
         [Column("time_out")]
         public DateTime? TimeOut { get; set; }
 
-        // cont_condition IN ('Good','Damaged','Under_repair')
         [Column("cont_condition")]
         [MaxLength(20)]
         public string? ContCondition { get; set; }
@@ -48,14 +50,21 @@ namespace DepotContainer.Domain.Entities
         [Column("cont_iso_id")]
         public int? ContIsoId { get; set; }
 
-        [ForeignKey("ContIsoId")]
+        [ForeignKey(nameof(ContIsoId))]
         public ContainerISO? ContIso { get; set; }
 
         [Column("slot_id")]
         public int? SlotId { get; set; }
 
-        [ForeignKey("SlotId")]
+        [ForeignKey(nameof(SlotId))]
         public Slot? Slot { get; set; }
+
+        // ✅ Sửa đúng chuẩn — tránh nhầm với kiểu string
+        [Column("booking_id")]
+        public int? BookingId { get; set; }
+
+        [ForeignKey(nameof(BookingId))]
+        public Booking? Booking { get; set; } // 🔹 đổi từ BookingNumber → Booking
 
         public ICollection<Seal>? Seals { get; set; }
         public ICollection<EIR>? EIRs { get; set; }

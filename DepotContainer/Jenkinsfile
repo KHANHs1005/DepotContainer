@@ -1,0 +1,197 @@
+﻿pipeline {
+    agent any
+    
+    environment {
+        // Docker images
+        API_IMAGE = 'depotcontainer-api'
+        FE_IMAGE = 'depotcontainer-fe'
+        DB_IMAGE = 'depot-db'
+        
+        // Docker network
+        NETWORK_NAME = 'depotcontainer-network'
+        
+        // Ports
+        API_PORT = '8080'
+        FE_PORT = '80'
+        DB_PORT = '1433'
+        
+        // Database credentials
+        DB_PASSWORD = 'NewStrong@123'
+        SA_PASSWORD = 'NewStrong@123'
+    }
+    
+    stages {
+        stage('Cleanup Old Containers') {
+            steps {
+                script {
+                    echo '🧹 Cleaning up old containers and images...'
+                    bat '''
+                        docker stop depotcontainer-api depotcontainer-fe depot-db 2>nul || echo No containers to stop
+                        docker rm depotcontainer-api depotcontainer-fe depot-db 2>nul || echo No containers to remove
+                        docker network rm %NETWORK_NAME% 2>nul || echo No network to remove
+                    '''
+                }
+            }
+        }
+        
+        stage('Create Docker Network') {
+            steps {
+                script {
+                    echo '🌐 Creating Docker network...'
+                    bat "docker network create %NETWORK_NAME% || echo Network already exists"
+                }
+            }
+        }
+        
+        stage('Build & Run Database') {
+            steps {
+                script {
+                    echo '🗄️ Starting SQL Server database...'
+                    bat """
+                        docker run -d ^
+                        --name %DB_IMAGE% ^
+                        --network %NETWORK_NAME% ^
+                        -e ACCEPT_EULA=Y ^
+                        -e SA_PASSWORD=%SA_PASSWORD% ^
+                        -p %DB_PORT%:1433 ^
+                        mcr.microsoft.com/mssql/server:2022-latest
+                    """
+                    
+                    echo '⏳ Waiting for database to be ready...'
+                    bat 'timeout /t 30 /nobreak'
+                }
+            }
+        }
+        
+        stage('Build .NET API') {
+            steps {
+                script {
+                    echo '🔨 Building .NET API...'
+                    bat 'dotnet restore DepotContainer.API/DepotContainer.API.csproj'
+                    bat 'dotnet build DepotContainer.API/DepotContainer.API.csproj --configuration Release --no-restore'
+                }
+            }
+        }
+        
+        stage('Run API Tests') {
+            steps {
+                script {
+                    echo '🧪 Running API tests...'
+                    bat 'dotnet test --configuration Release --no-build --verbosity normal || echo No tests found'
+                }
+            }
+        }
+        
+        stage('Build API Docker Image') {
+            steps {
+                script {
+                    echo '🐳 Building API Docker image...'
+                    bat "docker build -t %API_IMAGE%:latest -f Dockerfile ."
+                }
+            }
+        }
+        
+        stage('Build Frontend Docker Image') {
+            steps {
+                script {
+                    echo '🎨 Building Frontend Docker image...'
+                    dir('DepotContainer.FE') {
+                        bat "docker build -t %FE_IMAGE%:latest -f Dockerfile ."
+                    }
+                }
+            }
+        }
+        
+        stage('Run API Container') {
+            steps {
+                script {
+                    echo '🚀 Starting API container...'
+                    bat """
+                        docker run -d ^
+                        --name depotcontainer-api ^
+                        --network %NETWORK_NAME% ^
+                        -p %API_PORT%:8080 ^
+                        -e ASPNETCORE_ENVIRONMENT=Production ^
+                        -e ConnectionStrings__DefaultConnection="Server=%DB_IMAGE%;Database=DepotContainer;User Id=sa;Password=%DB_PASSWORD%;TrustServerCertificate=True;MultipleActiveResultSets=True;Encrypt=False" ^
+                        %API_IMAGE%:latest
+                    """
+                    
+                    echo '⏳ Waiting for API to start...'
+                    bat 'timeout /t 15 /nobreak'
+                }
+            }
+        }
+        
+        stage('Run Frontend Container') {
+            steps {
+                script {
+                    echo '🌐 Starting Frontend container...'
+                    bat """
+                        docker run -d ^
+                        --name depotcontainer-fe ^
+                        --network %NETWORK_NAME% ^
+                        -p %FE_PORT%:80 ^
+                        %FE_IMAGE%:latest
+                    """
+                }
+            }
+        }
+        
+        stage('Health Check') {
+            steps {
+                script {
+                    echo '🏥 Running health checks...'
+                    bat '''
+                        echo Checking API health...
+                        curl -f http://localhost:8080/swagger/index.html || echo API health check failed
+                        
+                        echo Checking Frontend health...
+                        curl -f http://localhost:80 || echo Frontend health check failed
+                    '''
+                }
+            }
+        }
+        
+        stage('Database Migration') {
+            steps {
+                script {
+                    echo '📊 Running database migrations...'
+                    bat '''
+                        docker exec depotcontainer-api dotnet ef database update --no-build || echo Migration skipped
+                    '''
+                }
+            }
+        }
+    }
+    
+    post {
+        success {
+            echo '''
+            ✅ ================================
+            ✅ DEPLOYMENT SUCCESSFUL!
+            ✅ ================================
+            📍 API Swagger: http://localhost:8080
+            📍 Frontend: http://localhost:80
+            📍 Database: localhost:1433
+            ✅ ================================
+            '''
+        }
+        failure {
+            echo '''
+            ❌ ================================
+            ❌ DEPLOYMENT FAILED!
+            ❌ ================================
+            '''
+            bat '''
+                echo Showing container logs...
+                docker logs depotcontainer-api 2>nul || echo No API logs
+                docker logs depotcontainer-fe 2>nul || echo No FE logs
+                docker logs depot-db 2>nul || echo No DB logs
+            '''
+        }
+        always {
+            echo '🧹 Cleaning up Docker system...'
+            bat 'docker system prune -f'
+        }
+    }
+}

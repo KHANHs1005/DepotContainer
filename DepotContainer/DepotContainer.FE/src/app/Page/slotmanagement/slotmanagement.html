@@ -1,0 +1,89 @@
+<div class="slot-management-container">
+  <!-- HEADER -->
+  <header class="page-header">
+    <button class="btn-back" (click)="goBack()">← Quay lại</button>
+    <h1>QUẢN LÝ BLOCK</h1>
+  </header>
+
+  <div class="block-title">
+    <h2>{{ blockName }}</h2>
+  </div>
+
+  <div class="content-wrapper">
+    <!-- GRID BÊN TRÁI - CHỈ HIỂN THỊ BAY-ROW -->
+    <div class="grid-section">
+      <div class="bay-row-grid">
+        <div *ngFor="let bayRow of bayRowCombinations"
+             class="bay-row-cell"
+             [class.selected]="selectedBayRow && selectedBayRow.bay === bayRow.bay && selectedBayRow.row === bayRow.row"
+             (click)="selectBayRow(bayRow)">
+          <div class="bay-row-label">container</div>
+          <div class="bay-row-position">B{{ bayRow.bay }} - R{{ bayRow.row }}</div>
+        </div>
+      </div>
+
+      <!-- BAY LABELS -->
+      <!--<div class="bay-labels">
+        <div class="bay-label" *ngFor="let bay of bays">Bay {{ bay }}</div>
+      </div>-->
+    </div>
+
+    <!-- INFO BÊN PHẢI - HIỂN THỊ TIERS -->
+    <div class="info-section">
+      <h3>{{ selectedBayRow ? ('Bay ' + selectedBayRow.bay + ' - Row ' + selectedBayRow.row) : 'Chọn một vị trí' }}</h3>
+
+      <div class="tier-list" *ngIf="selectedBayRow">
+        <div *ngFor="let tier of tiersInSelected"
+             class="tier-item"
+             [class.occupied]="tier.container"
+             (click)="tier.container && showContainerDetails(tier.container)">
+          <div class="tier-info">
+            <span class="tier-number">Tier {{ tier.tierNumber }}</span>
+            <span class="tier-status"
+                  [class.occupied]="tier.container"
+                  [class.empty]="!tier.container">
+              {{ tier.container ? tier.container.containerNumber : 'Empty' }}
+            </span>
+          </div>
+        </div>
+      </div>
+
+      <div class="no-selection" *ngIf="!selectedBayRow">
+        <p>Click vào một ô Bay-Row trong grid để xem chi tiết các Tiers</p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- MODAL CHI TIẾT CONTAINER -->
+<div class="modal" *ngIf="showContainerModal" (click)="closeContainerModal()">
+  <div class="modal-content" (click)="$event.stopPropagation()">
+    <div class="modal-header">
+      <h2>Chi tiết Container</h2>
+      <button class="btn-close" (click)="closeContainerModal()">×</button>
+    </div>
+
+    <div class="modal-body" *ngIf="selectedContainer">
+      <div class="info-row">
+        <span class="label">Mã số:</span>
+        <span class="value">{{ selectedContainer.containerNumber }}</span>
+      </div>
+      <div class="info-row">
+        <span class="label">Tình trạng:</span>
+        <span class="value">{{ selectedContainer.contStatus }}</span>
+      </div>
+      <div class="info-row">
+        <span class="label">Điều kiện:</span>
+        <span class="value">{{ selectedContainer.contCondition }}</span>
+      </div>
+      <div class="info-row">
+        <span class="label">Trọng lượng:</span>
+        <span class="value">{{ selectedContainer.weight || '—' }} kg</span>
+      </div>
+      <div class="info-row">
+        <span class="label">Thời gian vào:</span>
+        <span class="value">{{ selectedContainer.timeIn | date:'dd/MM/yyyy HH:mm' }}</span>
+      </div>
+    </div>
+  </div>
+</div>

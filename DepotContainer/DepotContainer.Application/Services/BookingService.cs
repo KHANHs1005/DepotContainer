@@ -47,6 +47,28 @@ namespace DepotContainer.Application.Services
             };
         }
 
+        // ✅ METHOD MỚI: Lấy booking với chi tiết containers theo ID
+        public async Task<BookingDetailDto?> GetBookingDetailsAsync(int id)
+        {
+            var booking = await _bookingRepository.GetBookingWithDetailsAsync(id);
+            
+            if (booking == null)
+                return null;
+
+            return MapToBookingDetailDto(booking);
+        }
+
+        // ✅ METHOD MỚI: Lấy booking với chi tiết containers theo Booking Number
+        public async Task<BookingDetailDto?> GetBookingDetailsByNumberAsync(string bookingNumber)
+        {
+            var booking = await _bookingRepository.GetBookingWithDetailsByNumberAsync(bookingNumber);
+            
+            if (booking == null)
+                return null;
+
+            return MapToBookingDetailDto(booking);
+        }
+
         public async Task<BookingDto> CreateAsync(CreateBookingDto dto)
         {
             if (string.IsNullOrWhiteSpace(dto.BookingNumber))
@@ -101,6 +123,36 @@ namespace DepotContainer.Application.Services
                 throw new Exception("Booking không tồn tại");
 
             await _bookingRepository.DeleteAsync(booking);
+        }
+
+        // ✅ HELPER METHOD: Map Entity sang BookingDetailDto
+        private BookingDetailDto MapToBookingDetailDto(Booking booking)
+        {
+            return new BookingDetailDto
+            {
+                BookingId = booking.BookingId,
+                BookingNumber = booking.BookingNumber,
+                ContSize = booking.ContSize,
+                ContQuantity = booking.ContQuantity,
+                OperatorName = booking.OperatorName,
+                ReleaseExpireDate = booking.ReleaseExpireDate,
+                CusId = booking.CustomerId,
+                CustomerName = booking.Customer?.Name, // Điều chỉnh theo property trong Customer entity
+                Containers = booking.Container?.Select(c => new ContainerInBookingDto
+                {
+                    ContId = c.ContainerId,
+                    ContNo = c.ContainerNo,
+                    ContType = c.ContIso?.IsoCode,     // GP/40FT, HC/40FT...
+                    ContSize = booking.ContSize,    // 20FT, 40FT...
+                    OperatorName = c.OperatorName,
+                    ContStatus = c.ContStatus,              // Empty, Full
+                    ContCondition = c.ContCondition,        // Good, Damaged, Under_repair
+                    HasEir = c.TimeIn != null,              // Đã có Gate-In EIR
+                    TimeIn = c.TimeIn,
+                    TimeOut = c.TimeOut,
+                    Weight = (float?)c.Weight
+                }).ToList() ?? new List<ContainerInBookingDto>()
+            };
         }
     }
 }

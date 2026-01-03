@@ -12,14 +12,13 @@ namespace DepotContainer.Infrastructure.Data
         }
 
         // === DbSet cho toàn bộ entity trong hệ thống ===
-        public DbSet<Container> Containers { get; set; }
+        public DbSet<Container> Containers { get; set; } 
         public DbSet<EIR> Eirs { get; set; }
         public DbSet<Block> Blocks { get; set; }
         public DbSet<Slot> Slots { get; set; }
         public DbSet<Booking> Bookings { get; set; }
         public DbSet<Customer> Customers { get; set; }
         public DbSet<Staff> Staffs { get; set; }
-
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
             base.OnModelCreating(modelBuilder);
@@ -37,6 +36,21 @@ namespace DepotContainer.Infrastructure.Data
                 entity.Property(e => e.StaffName).IsRequired().HasMaxLength(100);
                 entity.Property(e => e.ContactPhone).HasMaxLength(20);
             });
+
+            modelBuilder.Entity<Staff>(entity =>
+            {
+                entity.ToTable("Staff"); // mapping tới bảng có sẵn trong SQL
+                entity.Property(e => e.StaffName).IsRequired().HasMaxLength(100);
+                entity.Property(e => e.ContactPhone).HasMaxLength(20);
+            });
+            modelBuilder.Entity<Slot>()
+                .HasOne(s => s.Container)
+                .WithOne(c => c.Slot)
+                .HasForeignKey<Container>(c => c.SlotId)
+                .OnDelete(DeleteBehavior.SetNull);
+            modelBuilder.Entity<Container>()
+                .Property(c => c.ContainerType)
+                .HasConversion<string>();
         }
     }
 }
